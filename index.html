@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Raghav | UI/UX Designer & Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles-js"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle">
+                    <span>A</span>
+                    <span>R</span>
+                </div>
+            </div>
+            <div class="loading-text">
+                <span class="letter" style="--i:1">L</span>
+                <span class="letter" style="--i:2">O</span>
+                <span class="letter" style="--i:3">A</span>
+                <span class="letter" style="--i:4">D</span>
+                <span class="letter" style="--i:5">I</span>
+                <span class="letter" style="--i:6">N</span>
+                <span class="letter" style="--i:7">G</span>
+                <span class="letter" style="--i:8">.</span>
+                <span class="letter" style="--i:9">.</span>
+                <span class="letter" style="--i:10">.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-shape">
+                    <span class="logo-text">AR</span>
+                    <div class="logo-dot"></div>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">
+                    <span class="nav-text">Home</span>
+                    <div class="nav-line"></div>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <span class="nav-text">Projects</span>
+                    <div class="nav-line"></div>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <span class="nav-text">Skills</span>
+                    <div class="nav-line"></div>
+                </a>
+                <a href="#about" class="nav-link">
+                    <span class="nav-text">About</span>
+                    <div class="nav-line"></div>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span class="nav-text">Contact</span>
+                    <div class="nav-line"></div>
+                </a>
+                <a href="assets/Aditya_Raghav_UI-UX_Designer.pdf" class="btn-nav" target="_blank">
+                    <span>Resume</span>
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+            
+            <!-- Theme Toggle -->
+            <!-- <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch" class="theme-checkbox">
+                <label for="theme-switch" class="theme-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="theme-ball"></div>
+                </label>
+            </div> -->
+            
+            <button class="menu-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="hero-badge">
+                    <span>UI/UX Designer & Frontend Developer</span>
+                    <div class="badge-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Hello, I'm</span>
+                    <span class="title-name">
+                        <span class="name-letter" style="--i:1">A</span>
+                        <span class="name-letter" style="--i:2">d</span>
+                        <span class="name-letter" style="--i:3">i</span>
+                        <span class="name-letter" style="--i:4">t</span>
+                        <span class="name-letter" style="--i:5">y</span>
+                        <span class="name-letter" style="--i:6">a</span>
+                        <span>&nbsp;</span>
+                        <span class="name-letter" style="--i:7">R</span>
+                        <span class="name-letter" style="--i:8">a</span>
+                        <span class="name-letter" style="--i:9">g</span>
+                        <span class="name-letter" style="--i:10">h</span>
+                        <span class="name-letter" style="--i:11">a</span>
+                        <span class="name-letter" style="--i:12">v</span>
+                    </span>
+                </h1>
+                
+                <p class="hero-description">
+                    I create <span class="highlight-text" data-text="intuitive">intuitive</span> digital experiences that 
+                    blend <span class="highlight-text" data-text="beautiful design">beautiful design</span> with 
+                    <span class="highlight-text" data-text="functional code">functional code</span>.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="counter" data-target="3">0</div>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="counter" data-target="15">0</div>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="counter" data-target="100">0</div>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary btn-magnetic">
+                        <span>View My Work</span>
+                        <div class="btn-wave"></div>
+                    </a>
+                    <a href="#contact" class="btn-secondary btn-magnetic">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                
+                <!-- Scroll Indicator
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <p>Scroll to explore</p>
+                </div> -->
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="300">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <div class="device-mockup">
+                            <div class="screen">
+                                <div class="screen-content">
+                                    <!-- Animated design elements -->
+                                    <div class="design-element el1"></div>
+                                    <div class="design-element el2"></div>
+                                    <div class="design-element el3"></div>
+                                    <div class="code-snippet">
+                                        <pre><code class="html">
+<span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="value">"ui-card"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;h3&gt;</span>Beautiful Design<span class="tag">&lt;/h3&gt;</span>
+  <span class="tag">&lt;p&gt;</span>+ Functional Code<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="device-frame"></div>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Preview -->
+    <section class="skills-preview">
+        <div class="container">
+            <div class="skills-carousel">
+                <div class="skill-item">
+                    <i class="fab fa-figma"></i>
+                    <span>Figma</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>UI Design</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-user-check"></i>
+                    <span>UX Research</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">My Work</div>
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">Real-world projects showcasing my design and development skills</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="image-container">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3>View Case Study</h3>
+                                    <div class="tech-tags">
+                                        <span>Figma</span>
+                                        <span>React</span>
+                                        <span>UX</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dashboard Design" class="project-img">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-number">01</div>
+                        <div class="project-header">
+                            <h3 class="project-title">Fintech Dashboard Redesign</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Complete redesign of financial dashboard with improved data visualization and user experience.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-chart-line"></i>
+                                <span>40% Faster</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>25% More Engagement</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-outline">View Case Study →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="image-container">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3>View Case Study</h3>
+                                    <div class="tech-tags">
+                                        <span>Mobile</span>
+                                        <span>UI Design</span>
+                                        <span>Prototype</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w-800&q=80" alt="Mobile App" class="project-img">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-number">02</div>
+                        <div class="project-header">
+                            <h3 class="project-title">Health & Fitness Mobile App</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            End-to-end design of fitness tracking app with gamification and progress visualization.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 Rating</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-download"></i>
+                                <span>50K+ Downloads</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-outline">View Case Study →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="image-container">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3>View Case Study</h3>
+                                    <div class="tech-tags">
+                                        <span>Design System</span>
+                                        <span>Components</span>
+                                        <span>Figma</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Design System" class="project-img">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-number">03</div>
+                        <div class="project-header">
+                            <h3 class="project-title">Enterprise Design System</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Created comprehensive design system with 200+ components for large-scale applications.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span>60% Faster Dev</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-check-circle"></i>
+                                <span>100% Consistent</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-outline">View Case Study →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="#" class="btn-primary btn-magnetic">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Expertise</div>
+                <h2 class="section-title">Skills & <span class="highlight">Technologies</span></h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Design Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Design & Prototyping</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Figma</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>UI/UX Design</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Prototyping</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Design Systems</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Development Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>HTML/CSS</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Responsive Design</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Performance</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Methodologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">User Research</span>
+                        <span class="skill-tag">Wireframing</span>
+                        <span class="skill-tag">Usability Testing</span>
+                        <span class="skill-tag">Six Sigma</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">Adobe Suite</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content" data-aos="fade-up">
+                <div class="section-header">
+                    <div class="section-badge">About Me</div>
+                    <h2 class="section-title">Designer <span class="highlight">Who</span> Codes</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            With a unique background in both <strong>design</strong> and <strong>development</strong>, 
+                            I bridge the gap between beautiful interfaces and functional code.
+                        </p>
+                        <p>
+                            My experience at <strong>Accuster Technologies</strong> has honed my skills in creating 
+                            user-centered designs that are both aesthetically pleasing and technically feasible.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <div>
+                                    <h4>Creative Problem Solver</h4>
+                                    <p>Turning complex challenges into elegant solutions</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-handshake"></i>
+                                <div>
+                                    <h4>Team Collaborator</h4>
+                                    <p>Bridging design and development teams effectively</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-rocket"></i>
+                                <div>
+                                    <h4>Fast Learner</h4>
+                                    <p>Quickly adapting to new tools and technologies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="experience-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>UI/UX & Frontend Developer</h4>
+                                    <p class="timeline-company">Accuster Technologies</p>
+                                    <p class="timeline-date">Nov 2023 - Present</p>
+                                    <p class="timeline-desc">Designing and developing user interfaces for enterprise applications</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Technical Support Engineer</h4>
+                                    <p class="timeline-company">Truth Institute</p>
+                                    <p class="timeline-date">Jul 2021 - Aug 2023</p>
+                                    <p class="timeline-desc">Improved internal tools and provided technical support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Get In Touch</div>
+                <h2 class="section-title">Let's <span class="highlight">Work Together</span></h2>
+                <p class="section-subtitle">Have a project in mind? Let's create something amazing!</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-items">
+                        <a href="mailto:aryaraghav8@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>aryaraghav8@gmail.com</p>
+                            </div>
+                            <div class="contact-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+919756674995" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 9756674995</p>
+                            </div>
+                            <div class="contact-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Ghitorni, New Delhi</p>
+                                <small>Available for remote work</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/aditya-raghav</p>
+                            </div>
+                            <div class="contact-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" class="form-animated">
+                        <div class="form-group floating-label">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group floating-label">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group floating-label">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group floating-label">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <div class="submit-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <div class="submit-wave"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span>A</span>
+                        <span>R</span>
+                    </div>
+                    <div class="footer-info">
+                        <h3>Aditya Raghav</h3>
+                        <p>UI/UX Designer & Frontend Developer</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="assets/resume.pdf" target="_blank">Resume</a>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Design Process</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+                
+                <div class="footer-cta">
+                    <h4>Ready to start a project?</h4>
+                    <a href="mailto:aryaraghav8@gmail.com" class="btn-outline">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aditya Raghav. All rights reserved.</p>
+                <p>Designed & Developed with ❤️ by Aditya Raghav</p>
+            </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <button class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
