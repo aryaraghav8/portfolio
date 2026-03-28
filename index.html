@@ -1,792 +1,635 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Raghav | UI/UX Designer & Frontend Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Raghav | UI/UX Designer & Frontend Developer</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Floating Particles Background -->
-    <div class="particles" id="particles-js"></div>
-    
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loading-content">
-            <div class="loading-logo">
-                <div class="logo-circle">
-                    <span>A</span>
-                    <span>R</span>
-                </div>
-            </div>
-            <div class="loading-text">
-                <span class="letter" style="--i:1">L</span>
-                <span class="letter" style="--i:2">O</span>
-                <span class="letter" style="--i:3">A</span>
-                <span class="letter" style="--i:4">D</span>
-                <span class="letter" style="--i:5">I</span>
-                <span class="letter" style="--i:6">N</span>
-                <span class="letter" style="--i:7">G</span>
-                <span class="letter" style="--i:8">.</span>
-                <span class="letter" style="--i:9">.</span>
-                <span class="letter" style="--i:10">.</span>
-            </div>
-        </div>
-    </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">
-                <div class="logo-shape">
-                    <span class="logo-text">AR</span>
-                    <div class="logo-dot"></div>
-                </div>
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand logo-mark" href="#home">AR</a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary-custom rounded-pill px-4 py-2"
+               href="assets/Aditya_Raghav_UI-UX_Designer.pdf" target="_blank">
+              <i class="fas fa-download me-1"></i> Resume
             </a>
-            <div class="nav-links">
-                <a href="#home" class="nav-link">
-                    <span class="nav-text">Home</span>
-                    <div class="nav-line"></div>
-                </a>
-                <a href="#projects" class="nav-link">
-                    <span class="nav-text">Projects</span>
-                    <div class="nav-line"></div>
-                </a>
-                <a href="#skills" class="nav-link">
-                    <span class="nav-text">Skills</span>
-                    <div class="nav-line"></div>
-                </a>
-                <a href="#about" class="nav-link">
-                    <span class="nav-text">About</span>
-                    <div class="nav-line"></div>
-                </a>
-                <a href="#contact" class="nav-link">
-                    <span class="nav-text">Contact</span>
-                    <div class="nav-line"></div>
-                </a>
-                <a href="assets/Aditya_Raghav_UI-UX_Designer.pdf" class="btn-nav" target="_blank">
-                    <span>Resume</span>
-                    <i class="fas fa-download"></i>
-                </a>
-            </div>
-            
-            <!-- Theme Toggle -->
-            <!-- <div class="theme-toggle">
-                <input type="checkbox" id="theme-switch" class="theme-checkbox">
-                <label for="theme-switch" class="theme-label">
-                    <i class="fas fa-sun"></i>
-                    <i class="fas fa-moon"></i>
-                    <div class="theme-ball"></div>
-                </label>
-            </div> -->
-            
-            <button class="menu-toggle">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-        </div>
-    </nav>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
-                <div class="hero-badge">
-                    <span>UI/UX Designer & Frontend Developer</span>
-                    <div class="badge-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+  <!-- ======= HERO ======= -->
+  <section id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        <div class="col-lg-7" data-aos="fade-up">
+          <span class="hero-pill mb-3 d-inline-block">
+            <i class="fas fa-circle dot-blink me-2"></i>UI/UX Designer &amp; Developer
+          </span>
+
+          <h1 class="hero-title mb-3">
+            Hello, I'm<br />
+            <span class="gradient-text">Aditya Raghav</span>
+          </h1>
+
+          <p class="hero-desc mb-4">
+            I craft <strong>intuitive</strong> digital experiences that blend
+            <strong>beautiful design</strong> with <strong>functional code</strong>.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-4">
+              <div class="stat-card text-center p-3">
+                <div class="stat-num">
+                  <span class="counter" data-target="2">0</span>+
                 </div>
-                
-                <h1 class="hero-title">
-                    <span class="title-line">Hello, I'm</span>
-                    <span class="title-name">
-                        <span class="name-letter" style="--i:1">A</span>
-                        <span class="name-letter" style="--i:2">d</span>
-                        <span class="name-letter" style="--i:3">i</span>
-                        <span class="name-letter" style="--i:4">t</span>
-                        <span class="name-letter" style="--i:5">y</span>
-                        <span class="name-letter" style="--i:6">a</span>
-                        <span>&nbsp;</span>
-                        <span class="name-letter" style="--i:7">R</span>
-                        <span class="name-letter" style="--i:8">a</span>
-                        <span class="name-letter" style="--i:9">g</span>
-                        <span class="name-letter" style="--i:10">h</span>
-                        <span class="name-letter" style="--i:11">a</span>
-                        <span class="name-letter" style="--i:12">v</span>
-                    </span>
-                </h1>
-                
-                <p class="hero-description">
-                    I create <span class="highlight-text" data-text="intuitive">intuitive</span> digital experiences that 
-                    blend <span class="highlight-text" data-text="beautiful design">beautiful design</span> with 
-                    <span class="highlight-text" data-text="functional code">functional code</span>.
+                <div class="stat-label">Years Exp.</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card text-center p-3">
+                <div class="stat-num">
+                  <span class="counter" data-target="20">0</span>+
+                </div>
+                <div class="stat-label">UI Screens</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card text-center p-3">
+                <div class="stat-num">
+                  <span class="counter" data-target="10">0</span>+
+                </div>
+                <div class="stat-label">Projects</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#projects" class="btn btn-primary-custom rounded-pill px-4 py-2">
+              View My Work <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline-custom rounded-pill px-4 py-2">
+              Get In Touch <i class="fas fa-paper-plane ms-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 d-flex justify-content-center" data-aos="fade-left" data-aos-delay="150">
+          <div class="hero-code-card">
+            <div class="code-header d-flex gap-2 mb-3">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <pre class="code-body mb-3"><code><span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-val">"designer"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;h1&gt;</span>Beautiful Design<span class="c-tag">&lt;/h1&gt;</span>
+  <span class="c-tag">&lt;p&gt;</span>+ Functional Code<span class="c-tag">&lt;/p&gt;</span>
+  <span class="c-tag">&lt;span&gt;</span>= Great UX<span class="c-tag">&lt;/span&gt;</span>
+<span class="c-tag">&lt;/div&gt;</span></code></pre>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="tool-badge"><i class="fab fa-figma me-1"></i>Figma</span>
+              <span class="tool-badge"><i class="fab fa-react me-1"></i>React</span>
+              <span class="tool-badge"><i class="fab fa-js me-1"></i>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TICKER ======= -->
+  <div class="skills-ticker py-3" aria-hidden="true">
+    <div class="ticker-track">
+      <span><i class="fab fa-figma me-2"></i>Figma</span>
+      <span><i class="fab fa-html5 me-2"></i>HTML5</span>
+      <span><i class="fab fa-css3-alt me-2"></i>CSS3</span>
+      <span><i class="fab fa-js me-2"></i>JavaScript</span>
+      <span><i class="fab fa-react me-2"></i>React</span>
+      <span><i class="fas fa-paint-brush me-2"></i>UI Design</span>
+      <span><i class="fas fa-user-check me-2"></i>UX Research</span>
+      <span><i class="fas fa-robot me-2"></i>AI Tools</span>
+      <span><i class="fab fa-figma me-2"></i>Figma</span>
+      <span><i class="fab fa-html5 me-2"></i>HTML5</span>
+      <span><i class="fab fa-css3-alt me-2"></i>CSS3</span>
+      <span><i class="fab fa-js me-2"></i>JavaScript</span>
+      <span><i class="fab fa-react me-2"></i>React</span>
+      <span><i class="fas fa-paint-brush me-2"></i>UI Design</span>
+      <span><i class="fas fa-user-check me-2"></i>UX Research</span>
+      <span><i class="fas fa-robot me-2"></i>AI Tools</span>
+    </div>
+  </div>
+
+  <!-- ======= PROJECTS ======= -->
+  <section id="projects" class="section-pad">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-sub">Real-world projects showcasing my design and development skills</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card h-100">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                alt="Internal Web Portals" class="project-img" />
+              <div class="project-overlay">
+                <div class="d-flex gap-2 flex-wrap justify-content-center">
+                  <span class="overlay-tag">Figma</span>
+                  <span class="overlay-tag">React</span>
+                  <span class="overlay-tag">UX</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body p-4">
+              <div class="proj-num">01</div>
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="proj-title">Internal Web Portals</h3>
+                <div class="d-flex gap-2">
+                  <a href="#" class="proj-icon-btn"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="proj-icon-btn"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <p class="proj-desc">3 internal dashboards focused on clean UI, reusable components, and scalability.</p>
+              <div class="d-flex gap-3 mb-3 flex-wrap">
+                <span class="proj-stat"><i class="fas fa-chart-line me-1"></i>30% Faster Load</span>
+                <span class="proj-stat"><i class="fas fa-users me-1"></i>20% Better UX</span>
+              </div>
+              <a href="#" class="btn-text-link">View Case Study <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card h-100">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80"
+                alt="Website Creation" class="project-img" />
+              <div class="project-overlay">
+                <div class="d-flex gap-2 flex-wrap justify-content-center">
+                  <span class="overlay-tag">HTML</span>
+                  <span class="overlay-tag">CSS</span>
+                  <span class="overlay-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body p-4">
+              <div class="proj-num">02</div>
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="proj-title">Websites from Scratch</h3>
+                <div class="d-flex gap-2">
+                  <a href="#" class="proj-icon-btn"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="proj-icon-btn"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <p class="proj-desc">Built 3 full websites with HTML, CSS &amp; JavaScript — user-centric &amp; responsive.</p>
+              <div class="d-flex gap-3 mb-3 flex-wrap">
+                <span class="proj-stat"><i class="fas fa-mobile-alt me-1"></i>Fully Responsive</span>
+                <span class="proj-stat"><i class="fas fa-check-circle me-1"></i>User-Centric</span>
+              </div>
+              <a href="#" class="btn-text-link">View Case Study <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card h-100">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80"
+                alt="WordPress Enhancements" class="project-img" />
+              <div class="project-overlay">
+                <div class="d-flex gap-2 flex-wrap justify-content-center">
+                  <span class="overlay-tag">WordPress</span>
+                  <span class="overlay-tag">UI/UX</span>
+                  <span class="overlay-tag">QA</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body p-4">
+              <div class="proj-num">03</div>
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="proj-title">WordPress Enhancements</h3>
+                <div class="d-flex gap-2">
+                  <a href="#" class="proj-icon-btn"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="proj-icon-btn"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <p class="proj-desc">Improved UI/UX for 4 WordPress sites — navigation, responsiveness &amp; engagement.</p>
+              <div class="d-flex gap-3 mb-3 flex-wrap">
+                <span class="proj-stat"><i class="fas fa-eye me-1"></i>4 Websites</span>
+                <span class="proj-stat"><i class="fas fa-tachometer-alt me-1"></i>Cross-browser</span>
+              </div>
+              <a href="#" class="btn-text-link">View Case Study <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="#" class="btn btn-primary-custom rounded-pill px-5 py-2">
+          View All Projects <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section id="skills" class="section-pad bg-soft">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-card h-100 p-4">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+              <h3 class="mb-0">Design &amp; Prototyping</h3>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <div class="d-flex justify-content-between mb-1"><span>Figma</span><span class="text-primary-custom fw-600">95%</span></div>
+                <div class="progress skill-progress"><div class="progress-bar" style="width:95%"></div></div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between mb-1"><span>UI/UX Design</span><span class="text-primary-custom fw-600">90%</span></div>
+                <div class="progress skill-progress"><div class="progress-bar" style="width:90%"></div></div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between mb-1"><span>Prototyping</span><span class="text-primary-custom fw-600">85%</span></div>
+                <div class="progress skill-progress"><div class="progress-bar" style="width:85%"></div></div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between mb-1"><span>Design Systems</span><span class="text-primary-custom fw-600">88%</span></div>
+                <div class="progress skill-progress"><div class="progress-bar" style="width:88%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-card h-100 p-4">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="skill-icon"><i class="fas fa-code"></i></div>
+              <h3 class="mb-0">Frontend Development</h3>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <div class="d-flex justify-content-between mb-1"><span>HTML / CSS</span><span class="text-primary-custom fw-600">95%</span></div>
+                <div class="progress skill-progress"><div class="progress-bar" style="width:95%"></div></div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between mb-1"><span>JavaScript</span><span class="text-primary-custom fw-600">80%</span></div>
+                <div class="progress skill-progress"><div class="progress-bar" style="width:80%"></div></div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between mb-1"><span>React</span><span class="text-primary-custom fw-600">82%</span></div>
+                <div class="progress skill-progress"><div class="progress-bar" style="width:82%"></div></div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between mb-1"><span>Responsive Design</span><span class="text-primary-custom fw-600">92%</span></div>
+                <div class="progress skill-progress"><div class="progress-bar" style="width:92%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-card h-100 p-4">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="skill-icon"><i class="fas fa-tools"></i></div>
+              <h3 class="mb-0">Tools &amp; Methodologies</h3>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="skill-tag">User Research</span>
+              <span class="skill-tag">Wireframing</span>
+              <span class="skill-tag">Usability Testing</span>
+              <span class="skill-tag">Info Architecture</span>
+              <span class="skill-tag">Agile / Scrum</span>
+              <span class="skill-tag">Developer Handoff</span>
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">Photoshop</span>
+              <span class="skill-tag">ChatGPT</span>
+              <span class="skill-tag">Claude AI</span>
+              <span class="skill-tag">Stitch</span>
+              <span class="skill-tag">Cross-functional Collab</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Designer <span class="gradient-text">Who</span> Codes</h2>
+      </div>
+
+      <div class="row g-5 align-items-center">
+
+        <div class="col-lg-6" data-aos="fade-right">
+          <p class="about-text mb-3">
+            With a unique background in both <strong>design</strong> and <strong>development</strong>,
+            I bridge the gap between beautiful interfaces and functional code.
+          </p>
+          <p class="about-text mb-4">
+            Currently at <strong>AAFM India</strong>, I craft high-fidelity UI screens, design systems,
+            and interactive prototypes in agile environments. My earlier experience at
+            <strong>Accuster Technologies</strong> shaped my ability to build scalable React
+            applications and optimize frontend performance.
+          </p>
+
+          <div class="d-flex flex-column gap-3">
+            <div class="about-highlight d-flex align-items-start gap-3">
+              <div class="about-icon flex-shrink-0"><i class="fas fa-lightbulb"></i></div>
+              <div>
+                <h5 class="mb-1">Creative Problem Solver</h5>
+                <p class="mb-0 text-muted small">Turning complex challenges into elegant solutions</p>
+              </div>
+            </div>
+            <div class="about-highlight d-flex align-items-start gap-3">
+              <div class="about-icon flex-shrink-0"><i class="fas fa-handshake"></i></div>
+              <div>
+                <h5 class="mb-1">Team Collaborator</h5>
+                <p class="mb-0 text-muted small">Bridging design and development teams effectively</p>
+              </div>
+            </div>
+            <div class="about-highlight d-flex align-items-start gap-3">
+              <div class="about-icon flex-shrink-0"><i class="fas fa-rocket"></i></div>
+              <div>
+                <h5 class="mb-1">Fast Learner</h5>
+                <p class="mb-0 text-muted small">Quickly adapting to new tools and technologies</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
+          <div class="timeline ps-3">
+
+            <div class="timeline-item mb-4 position-relative">
+              <div class="tl-dot"></div>
+              <div class="tl-body p-4">
+                <span class="tl-badge mb-2 d-inline-block">Current Role</span>
+                <h5 class="mb-1">UI/UX Designer &amp; Frontend Developer</h5>
+                <p class="tl-company mb-1">AAFM India</p>
+                <p class="tl-date mb-2">
+                  <i class="fas fa-calendar-alt me-1"></i>Oct 2025 – Present &middot; New Delhi
                 </p>
-                
-                <div class="hero-stats">
-                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="stat-icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <div class="stat-content">
-                            <div class="counter" data-target="3">0</div>
-                            <p>Years Experience</p>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="stat-icon">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                        <div class="stat-content">
-                            <div class="counter" data-target="15">0</div>
-                            <p>Projects Completed</p>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="stat-icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <div class="stat-content">
-                            <div class="counter" data-target="100">0</div>
-                            <p>Client Satisfaction</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn-primary btn-magnetic">
-                        <span>View My Work</span>
-                        <div class="btn-wave"></div>
-                    </a>
-                    <a href="#contact" class="btn-secondary btn-magnetic">
-                        <span>Get In Touch</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </a>
-                </div>
-                
-                <!-- Scroll Indicator
-                <div class="scroll-indicator">
-                    <div class="mouse">
-                        <div class="wheel"></div>
-                    </div>
-                    <p>Scroll to explore</p>
-                </div> -->
+                <p class="mb-0 text-muted small">
+                  30+ UI screens across dashboards, onboarding flows &amp; landing pages. Design systems, interactive prototypes, agile sprint cycles.
+                </p>
+              </div>
             </div>
-            
-            <div class="hero-visual" data-aos="fade-left" data-aos-delay="300">
-                <div class="floating-card">
-                    <div class="card-content">
-                        <div class="device-mockup">
-                            <div class="screen">
-                                <div class="screen-content">
-                                    <!-- Animated design elements -->
-                                    <div class="design-element el1"></div>
-                                    <div class="design-element el2"></div>
-                                    <div class="design-element el3"></div>
-                                    <div class="code-snippet">
-                                        <pre><code class="html">
-<span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="value">"ui-card"</span><span class="tag">&gt;</span>
-  <span class="tag">&lt;h3&gt;</span>Beautiful Design<span class="tag">&lt;/h3&gt;</span>
-  <span class="tag">&lt;p&gt;</span>+ Functional Code<span class="tag">&lt;/p&gt;</span>
-<span class="tag">&lt;/div&gt;</span>
-                                        </code></pre>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="device-frame"></div>
-                        </div>
-                    </div>
-                    <div class="card-glow"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Preview -->
-    <section class="skills-preview">
-        <div class="container">
-            <div class="skills-carousel">
-                <div class="skill-item">
-                    <i class="fab fa-figma"></i>
-                    <span>Figma</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-html5"></i>
-                    <span>HTML5</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-css3-alt"></i>
-                    <span>CSS3</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-js"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-paint-brush"></i>
-                    <span>UI Design</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-user-check"></i>
-                    <span>UX Research</span>
-                </div>
+            <div class="timeline-item position-relative">
+              <div class="tl-dot"></div>
+              <div class="tl-body p-4">
+                <h5 class="mb-1">Software Engineer | UI/UX &amp; Frontend Developer</h5>
+                <p class="tl-company mb-1">Accuster Technologies Pvt. Ltd</p>
+                <p class="tl-date mb-2">
+                  <i class="fas fa-calendar-alt me-1"></i>Nov 2023 – Oct 2025 &middot; New Delhi
+                </p>
+                <p class="mb-0 text-muted small">
+                  20+ user interfaces for web &amp; mobile. Built React apps (mysehat.ai, sehat.drlabike.in). Load time reduced by 30%, usability +20%.
+                </p>
+              </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <div class="section-badge">My Work</div>
-                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
-                <p class="section-subtitle">Real-world projects showcasing my design and development skills</p>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <div class="image-container">
-                            <div class="project-overlay">
-                                <div class="overlay-content">
-                                    <h3>View Case Study</h3>
-                                    <div class="tech-tags">
-                                        <span>Figma</span>
-                                        <span>React</span>
-                                        <span>UX</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dashboard Design" class="project-img">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-number">01</div>
-                        <div class="project-header">
-                            <h3 class="project-title">Fintech Dashboard Redesign</h3>
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-description">
-                            Complete redesign of financial dashboard with improved data visualization and user experience.
-                        </p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-chart-line"></i>
-                                <span>40% Faster</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-users"></i>
-                                <span>25% More Engagement</span>
-                            </div>
-                        </div>
-                        <a href="#" class="btn-outline">View Case Study →</a>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <div class="image-container">
-                            <div class="project-overlay">
-                                <div class="overlay-content">
-                                    <h3>View Case Study</h3>
-                                    <div class="tech-tags">
-                                        <span>Mobile</span>
-                                        <span>UI Design</span>
-                                        <span>Prototype</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w-800&q=80" alt="Mobile App" class="project-img">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-number">02</div>
-                        <div class="project-header">
-                            <h3 class="project-title">Health & Fitness Mobile App</h3>
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-description">
-                            End-to-end design of fitness tracking app with gamification and progress visualization.
-                        </p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-star"></i>
-                                <span>4.8 Rating</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-download"></i>
-                                <span>50K+ Downloads</span>
-                            </div>
-                        </div>
-                        <a href="#" class="btn-outline">View Case Study →</a>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <div class="image-container">
-                            <div class="project-overlay">
-                                <div class="overlay-content">
-                                    <h3>View Case Study</h3>
-                                    <div class="tech-tags">
-                                        <span>Design System</span>
-                                        <span>Components</span>
-                                        <span>Figma</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Design System" class="project-img">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-number">03</div>
-                        <div class="project-header">
-                            <h3 class="project-title">Enterprise Design System</h3>
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-description">
-                            Created comprehensive design system with 200+ components for large-scale applications.
-                        </p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-clock"></i>
-                                <span>60% Faster Dev</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-check-circle"></i>
-                                <span>100% Consistent</span>
-                            </div>
-                        </div>
-                        <a href="#" class="btn-outline">View Case Study →</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="#" class="btn-primary btn-magnetic">
-                    <span>View All Projects</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <div class="section-badge">Expertise</div>
-                <h2 class="section-title">Skills & <span class="highlight">Technologies</span></h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section id="contact" class="section-pad bg-soft">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Work Together</span></h2>
+        <p class="section-sub">Have a project in mind? Let's create something amazing!</p>
+      </div>
+
+      <div class="row g-5">
+
+        <div class="col-lg-5" data-aos="fade-right">
+          <h4 class="fw-bold mb-4">Contact Information</h4>
+
+          <div class="d-flex flex-column gap-3 mb-4">
+            <a href="mailto:aryaraghav8@gmail.com"
+               class="contact-item d-flex align-items-center gap-3 text-decoration-none">
+              <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+              <div class="flex-grow-1">
+                <div class="contact-label">Email</div>
+                <div class="contact-value">aryaraghav8@gmail.com</div>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <a href="tel:+919756674995"
+               class="contact-item d-flex align-items-center gap-3 text-decoration-none">
+              <div class="contact-icon-box"><i class="fas fa-phone"></i></div>
+              <div class="flex-grow-1">
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">+91 9756674995</div>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <div class="contact-item d-flex align-items-center gap-3">
+              <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="flex-grow-1">
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Noida, India</div>
+                <div class="contact-sub">Available for remote work</div>
+              </div>
             </div>
-            
-            <div class="skills-grid">
-                <!-- Design Skills -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h3>Design & Prototyping</h3>
-                    </div>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Figma</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>UI/UX Design</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Prototyping</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Design Systems</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 88%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Development Skills -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Frontend Development</h3>
-                    </div>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>HTML/CSS</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>JavaScript</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Responsive Design</span>
-                                <span>92%</span>
-                            </div>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Performance</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Other Skills -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <h3>Tools & Methodologies</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">User Research</span>
-                        <span class="skill-tag">Wireframing</span>
-                        <span class="skill-tag">Usability Testing</span>
-                        <span class="skill-tag">Six Sigma</span>
-                        <span class="skill-tag">Agile/Scrum</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Canva</span>
-                        <span class="skill-tag">Adobe Suite</span>
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Team Collaboration</span>
-                    </div>
-                </div>
-            </div>
+
+            <a href="https://linkedin.com/in/aryaraghav8/" target="_blank"
+               class="contact-item d-flex align-items-center gap-3 text-decoration-none">
+              <div class="contact-icon-box"><i class="fab fa-linkedin"></i></div>
+              <div class="flex-grow-1">
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value">linkedin.com/in/aryaraghav8</div>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+
+          <div class="d-flex gap-3">
+            <a href="#" class="social-btn"><i class="fab fa-dribbble"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-codepen"></i></a>
+          </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content" data-aos="fade-up">
-                <div class="section-header">
-                    <div class="section-badge">About Me</div>
-                    <h2 class="section-title">Designer <span class="highlight">Who</span> Codes</h2>
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="150">
+          <div class="contact-form-card p-4 p-lg-5">
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control custom-input" id="ctName"
+                      placeholder="Your Name" required />
+                    <label for="ctName">Your Name</label>
+                  </div>
                 </div>
-                
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>
-                            With a unique background in both <strong>design</strong> and <strong>development</strong>, 
-                            I bridge the gap between beautiful interfaces and functional code.
-                        </p>
-                        <p>
-                            My experience at <strong>Accuster Technologies</strong> has honed my skills in creating 
-                            user-centered designs that are both aesthetically pleasing and technically feasible.
-                        </p>
-                        <div class="about-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-lightbulb"></i>
-                                <div>
-                                    <h4>Creative Problem Solver</h4>
-                                    <p>Turning complex challenges into elegant solutions</p>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-handshake"></i>
-                                <div>
-                                    <h4>Team Collaborator</h4>
-                                    <p>Bridging design and development teams effectively</p>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-rocket"></i>
-                                <div>
-                                    <h4>Fast Learner</h4>
-                                    <p>Quickly adapting to new tools and technologies</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="about-visual">
-                        <div class="experience-timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>UI/UX & Frontend Developer</h4>
-                                    <p class="timeline-company">Accuster Technologies</p>
-                                    <p class="timeline-date">Nov 2023 - Present</p>
-                                    <p class="timeline-desc">Designing and developing user interfaces for enterprise applications</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Technical Support Engineer</h4>
-                                    <p class="timeline-company">Truth Institute</p>
-                                    <p class="timeline-date">Jul 2021 - Aug 2023</p>
-                                    <p class="timeline-desc">Improved internal tools and provided technical support</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control custom-input" id="ctEmail"
+                      placeholder="Email Address" required />
+                    <label for="ctEmail">Email Address</label>
+                  </div>
                 </div>
-            </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control custom-input" id="ctSubject"
+                      placeholder="Subject" required />
+                    <label for="ctSubject">Subject</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control custom-input" id="ctMessage"
+                      placeholder="Your Message" style="height:140px" required></textarea>
+                    <label for="ctMessage">Your Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom w-100 rounded-pill py-3" id="submitBtn">
+                    <span class="btn-label">Send Message</span>
+                    <i class="fas fa-paper-plane ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <div class="section-badge">Get In Touch</div>
-                <h2 class="section-title">Let's <span class="highlight">Work Together</span></h2>
-                <p class="section-subtitle">Have a project in mind? Let's create something amazing!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer py-5">
+    <div class="container">
+      <div class="row g-4 mb-4">
+
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <span class="logo-mark">AR</span>
+            <div>
+              <h5 class="mb-0 fw-bold text-white">Aditya Raghav</h5>
+              <small class="text-muted">UI/UX Designer &amp; Frontend Developer</small>
             </div>
-            
-            <div class="contact-grid">
-                <div class="contact-info" data-aos="fade-right">
-                    <h3>Contact Information</h3>
-                    
-                    <div class="contact-items">
-                        <a href="mailto:aryaraghav8@gmail.com" class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Email</h4>
-                                <p>aryaraghav8@gmail.com</p>
-                            </div>
-                            <div class="contact-arrow">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </a>
-                        
-                        <a href="tel:+919756674995" class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Phone</h4>
-                                <p>+91 9756674995</p>
-                            </div>
-                            <div class="contact-arrow">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </a>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Location</h4>
-                                <p>Ghitorni, New Delhi</p>
-                                <small>Available for remote work</small>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>LinkedIn</h4>
-                                <p>linkedin.com/in/aditya-raghav</p>
-                            </div>
-                            <div class="contact-arrow">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-dribbble"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-behance"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-codepen"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="contact-form" data-aos="fade-left">
-                    <form id="contactForm" class="form-animated">
-                        <div class="form-group floating-label">
-                            <input type="text" id="name" name="name" required>
-                            <label for="name">Your Name</label>
-                            <div class="form-line"></div>
-                        </div>
-                        
-                        <div class="form-group floating-label">
-                            <input type="email" id="email" name="email" required>
-                            <label for="email">Email Address</label>
-                            <div class="form-line"></div>
-                        </div>
-                        
-                        <div class="form-group floating-label">
-                            <input type="text" id="subject" name="subject" required>
-                            <label for="subject">Subject</label>
-                            <div class="form-line"></div>
-                        </div>
-                        
-                        <div class="form-group floating-label">
-                            <textarea id="message" name="message" required></textarea>
-                            <label for="message">Your Message</label>
-                            <div class="form-line"></div>
-                        </div>
-                        
-                        <button type="submit" class="btn-primary btn-submit">
-                            <span>Send Message</span>
-                            <div class="submit-icon">
-                                <i class="fas fa-paper-plane"></i>
-                            </div>
-                            <div class="submit-wave"></div>
-                        </button>
-                    </form>
-                </div>
-            </div>
+          </div>
+          <p class="text-muted small">
+            Crafting user-centric digital experiences across web and mobile platforms.
+          </p>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <span>A</span>
-                        <span>R</span>
-                    </div>
-                    <div class="footer-info">
-                        <h3>Aditya Raghav</h3>
-                        <p>UI/UX Designer & Frontend Developer</p>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h4>Quick Links</h4>
-                        <a href="#home">Home</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#about">About</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                    
-                    <div class="link-group">
-                        <h4>Resources</h4>
-                        <a href="assets/resume.pdf" target="_blank">Resume</a>
-                        <a href="#">Case Studies</a>
-                        <a href="#">Design Process</a>
-                        <a href="#">Blog</a>
-                    </div>
-                </div>
-                
-                <div class="footer-cta">
-                    <h4>Ready to start a project?</h4>
-                    <a href="mailto:aryaraghav8@gmail.com" class="btn-outline">
-                        <span>Let's Talk</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Aditya Raghav. All rights reserved.</p>
-                <p>Designed & Developed with ❤️ by Aditya Raghav</p>
-            </div>
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h6 class="footer-heading mb-3">Quick Links</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        
-        <!-- Back to Top Button -->
-        <button class="back-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading mb-3">Resources</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="assets/Aditya_Raghav_UI-UX_Designer.pdf" target="_blank">Resume</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Design Process</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h6 class="footer-heading mb-3">Ready to start?</h6>
+          <a href="mailto:aryaraghav8@gmail.com"
+             class="btn btn-outline-custom rounded-pill px-4 py-2 d-inline-block mb-3">
+            Let's Talk <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-btn sm"><i class="fab fa-dribbble"></i></a>
+            <a href="#" class="social-btn sm"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/aryaraghav8/" target="_blank" class="social-btn sm">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0 text-muted small">&copy; 2025 Aditya Raghav. All rights reserved.</p>
+        <p class="mb-0 text-muted small">
+          Designed &amp; Developed with <span class="text-accent">❤️</span> by Aditya Raghav
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
