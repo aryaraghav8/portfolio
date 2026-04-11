@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Case Study — Internal Web Portals | Aditya Raghav</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --primary:       #3a5cf5;
+  --primary-light: #6b8aff;
+  --accent:        #f7296e;
+  --dark:          #0d0f1a;
+  --soft-bg:       #f5f6fb;
+  --card-bg:       #ffffff;
+  --text-muted:    #6c757d;
+  --border:        #e8ebf5;
+  --shadow-sm:     0 4px 20px rgba(58,92,245,0.08);
+  --shadow-md:     0 12px 40px rgba(58,92,245,0.14);
+  --radius:        14px;
+  --transition:    0.3s ease;
+  --font-display:  'Poppins', sans-serif;
+  --font-body:     'DM Sans', sans-serif;
+}
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { font-family: var(--font-body); color: var(--dark); background: #fff; overflow-x: hidden; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); }
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.bg-soft { background: var(--soft-bg); }
+
+/* Navbar */
+#mainNav {
+  background: rgba(255,255,255,0.92); backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent; transition: var(--transition); padding: 18px 0;
+}
+#mainNav.scrolled { padding: 12px 0; border-bottom-color: var(--border); box-shadow: var(--shadow-sm); }
+.logo-mark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: #fff; font-family: var(--font-display); font-weight: 800; font-size: 1rem;
+  border-radius: 10px; text-decoration: none;
+}
+.btn-outline-custom {
+  background: transparent; color: var(--primary); border: 2px solid var(--primary);
+  font-weight: 600; transition: var(--transition); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+}
+.btn-outline-custom:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
+
+/* Hero */
+.cs-hero {
+  background: linear-gradient(135deg, #f5f6fb 0%, #eef1ff 100%);
+  padding: 130px 0 80px; border-bottom: 1px solid var(--border);
+  position: relative; overflow: hidden;
+}
+.cs-hero::before {
+  content: ''; position: absolute; top: -100px; right: -100px;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(58,92,245,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.section-tag {
+  display: inline-block; padding: 6px 16px;
+  background: rgba(58,92,245,0.08); color: var(--primary);
+  border-radius: 20px; font-weight: 600; font-size: 0.85rem; margin-bottom: 12px;
+}
+.cs-title { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800; line-height: 1.15; margin-bottom: 1rem; }
+.cs-subtitle { font-size: 1.02rem; color: #555; max-width: 580px; line-height: 1.75; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; }
+.meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+.meta-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 600; }
+.meta-value { font-size: 0.92rem; font-weight: 600; color: var(--dark); }
+.tag-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+.skill-tag {
+  display: inline-block; padding: 6px 14px; background: var(--card-bg);
+  border: 1px solid var(--border); border-radius: 20px; font-size: 0.82rem; font-weight: 500;
+  transition: var(--transition); cursor: default;
+}
+.skill-tag:hover { background: var(--primary); color: #fff; border-color: var(--primary); transform: translateY(-2px); }
+
+/* Sections */
+.section-pad { padding: 80px 0; }
+.section-num-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--primary); font-weight: 700; margin-bottom: 6px; display: block; }
+.section-title { font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 800; margin-bottom: 12px; }
+.body-text { font-size: 1.02rem; color: #444; line-height: 1.8; margin-bottom: 1rem; }
+
+/* Problem Cards */
+.problem-card {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.6rem;
+  box-shadow: var(--shadow-sm); transition: transform var(--transition), box-shadow var(--transition);
+  position: relative; overflow: hidden; height: 100%;
+}
+.problem-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, #ef4444, #f97316);
+}
+.problem-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.problem-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
+.problem-card h5 { font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem; }
+.problem-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
+
+/* Process Timeline */
+.process-timeline { position: relative; }
+.process-timeline::before {
+  content: ''; position: absolute; left: 22px; top: 0; bottom: 0;
+  width: 2px; background: linear-gradient(to bottom, var(--primary), var(--primary-light), var(--border));
+}
+.process-step { display: grid; grid-template-columns: 46px 1fr; gap: 1.2rem; margin-bottom: 1.8rem; }
+.step-circle {
+  width: 46px; height: 46px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 0.82rem;
+  box-shadow: 0 0 0 4px rgba(58,92,245,0.12); position: relative; z-index: 1; flex-shrink: 0;
+}
+.step-body {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1rem 1.3rem;
+  box-shadow: var(--shadow-sm);
+}
+.step-body h5 { font-weight: 700; font-size: 0.93rem; margin-bottom: 0.3rem; }
+.step-body p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.65; margin: 0; }
+
+/* Solution Cards */
+.solution-card {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.6rem;
+  box-shadow: var(--shadow-sm); transition: transform var(--transition), box-shadow var(--transition);
+  position: relative; overflow: hidden; height: 100%;
+}
+.solution-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+}
+.solution-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.sol-icon { font-size: 1.6rem; margin-bottom: 0.8rem; }
+.solution-card h5 { font-weight: 700; margin-bottom: 0.4rem; font-size: 0.95rem; }
+.solution-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
+
+/* Results */
+.result-card {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 2rem 1.2rem; text-align: center;
+  box-shadow: var(--shadow-sm); transition: transform var(--transition), box-shadow var(--transition);
+}
+.result-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+.result-num {
+  font-family: var(--font-display); font-size: 2.8rem; font-weight: 800; line-height: 1;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  margin-bottom: 0.5rem;
+}
+.result-label { font-size: 0.85rem; color: var(--text-muted); line-height: 1.4; }
+
+/* Learnings */
+.learning-item {
+  display: flex; gap: 1rem; align-items: flex-start;
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.2rem 1.4rem;
+  box-shadow: var(--shadow-sm); margin-bottom: 1rem; transition: transform var(--transition);
+}
+.learning-item:hover { transform: translateX(4px); box-shadow: var(--shadow-md); }
+.learning-icon {
+  width: 38px; height: 38px; border-radius: 9px; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.85rem;
+}
+.learning-item p { font-size: 0.92rem; color: #444; line-height: 1.7; margin: 0; }
+
+/* CTA */
+.cs-cta {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  padding: 70px 0; text-align: center;
+}
+.cs-cta h2 { color: #fff; font-weight: 800; font-size: 2rem; margin-bottom: 0.8rem; }
+.cs-cta p { color: rgba(255,255,255,0.8); margin-bottom: 1.8rem; }
+.btn-white {
+  background: #fff; color: var(--primary); border: none; font-weight: 700;
+  padding: 0.75rem 2rem; border-radius: 100px; text-decoration: none;
+  transition: var(--transition); display: inline-flex; align-items: center; gap: 0.5rem;
+}
+.btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); color: var(--primary); }
+.btn-white-outline {
+  background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.6); font-weight: 600;
+  padding: 0.75rem 2rem; border-radius: 100px; text-decoration: none; transition: var(--transition);
+  display: inline-flex; align-items: center; gap: 0.5rem;
+}
+.btn-white-outline:hover { background: rgba(255,255,255,0.15); color: #fff; transform: translateY(-2px); }
+
+/* Back to top */
+.back-to-top {
+  position: fixed; bottom: 28px; right: 28px; width: 46px; height: 46px;
+  background: var(--primary); color: #fff; border: none; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: 1rem;
+  opacity: 0; visibility: hidden; transform: translateY(10px); transition: var(--transition); z-index: 999; cursor: pointer;
+}
+.back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { background: var(--accent); transform: translateY(-3px); }
+
+.fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 767px) {
+  .cs-hero { padding: 110px 0 60px; }
+  .process-timeline::before { left: 20px; }
+  .process-step { grid-template-columns: 42px 1fr; }
+  .step-circle { width: 42px; height: 42px; font-size: 0.78rem; }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand logo-mark" href="index.html">AR</a>
+    <div class="ms-auto">
+      <a href="index.html#projects" class="btn btn-outline-custom rounded-pill px-4 py-2">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="cs-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <span class="section-tag fade-up visible"><i class="fas fa-circle me-2" style="font-size:0.45rem; vertical-align:middle;"></i>Case Study 01</span>
+        <h1 class="cs-title fade-up visible">Internal Web<br/><span class="gradient-text">Portal Redesign</span></h1>
+        <p class="cs-subtitle fade-up visible">How I improved performance, usability, and consistency across 3 internal dashboards used by mixed cross-functional teams at Accuster Technologies.</p>
+        <div class="meta-row fade-up visible">
+          <div class="meta-item"><span class="meta-label">Company</span><span class="meta-value">Accuster Technologies</span></div>
+          <div class="meta-item"><span class="meta-label">Role</span><span class="meta-value">UI/UX & Frontend Dev</span></div>
+          <div class="meta-item"><span class="meta-label">Timeline</span><span class="meta-value">Nov 2023 – Oct 2025</span></div>
+          <div class="meta-item"><span class="meta-label">Platform</span><span class="meta-value">Web — React + Figma</span></div>
+        </div>
+        <div class="tag-row fade-up visible">
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">UI/UX</span>
+          <span class="skill-tag">Performance</span>
+          <span class="skill-tag">Design Systems</span>
+          <span class="skill-tag">Usability Testing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad bg-soft">
+  <div class="container">
+    <span class="section-num-label fade-up">01 — The Problem</span>
+    <h2 class="section-title fade-up">What was <span class="gradient-text">going wrong?</span></h2>
+    <p class="body-text fade-up">The internal portals used daily by cross-functional teams — operations, finance, and product — were suffering from critical performance bottlenecks. Pages took too long to load, causing frustration and lost productivity. Beyond speed, there was no shared design language, forcing users to re-learn interactions every time they switched portals.</p>
+    <div class="row g-3 mt-2">
+      <div class="col-sm-6 col-lg-3"><div class="problem-card fade-up"><div class="problem-icon">🐢</div><h5>Slow Load Times</h5><p>Unoptimized assets, bloated components, and no lazy loading — directly impacting team productivity every day.</p></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="problem-card fade-up"><div class="problem-icon">🧩</div><h5>No Reusable Components</h5><p>Each portal built in isolation with duplicated code, making updates expensive and error-prone.</p></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="problem-card fade-up"><div class="problem-icon">🎭</div><h5>Inconsistent UI Patterns</h5><p>Different navigation patterns and layouts across portals caused confusion and a steep learning curve.</p></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="problem-card fade-up"><div class="problem-icon">📉</div><h5>Poor Dev Handoff</h5><p>No structured design documentation meant developers freely interpreted specs, leading to mismatched builds.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <span class="section-num-label fade-up">02 — The Process</span>
+    <h2 class="section-title fade-up">How I <span class="gradient-text">approached it</span></h2>
+    <p class="body-text fade-up">A structured end-to-end process — starting from user discovery, through system-level design, and ending with measurable performance improvements.</p>
+    <div class="row mt-4">
+      <div class="col-lg-8">
+        <div class="process-timeline">
+          <div class="process-step fade-up"><div class="step-circle">01</div><div class="step-body"><h5>Discovery & Audit</h5><p>Audited all 3 portals — mapped user flows, identified pain points, and benchmarked load times using Chrome DevTools and Lighthouse scores.</p></div></div>
+          <div class="process-step fade-up"><div class="step-circle">02</div><div class="step-body"><h5>Wireframing & IA</h5><p>Created 15 wireframes in Figma to restructure navigation and layouts, making key actions accessible within fewer clicks for all team types.</p></div></div>
+          <div class="process-step fade-up"><div class="step-circle">03</div><div class="step-body"><h5>Design System</h5><p>Built a shared component library — buttons, tables, forms, cards — with consistent spacing, typography, and color tokens across all portals.</p></div></div>
+          <div class="process-step fade-up"><div class="step-circle">04</div><div class="step-body"><h5>Frontend Build</h5><p>Rebuilt in React with modular components. Implemented code-splitting, lazy loading, and asset optimization to directly attack load time.</p></div></div>
+          <div class="process-step fade-up"><div class="step-circle">05</div><div class="step-body"><h5>Usability Testing</h5><p>Ran sessions with users from each department, iterated on navigation and layouts, and validated a 20% task success improvement.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad bg-soft">
+  <div class="container">
+    <span class="section-num-label fade-up">03 — The Solution</span>
+    <h2 class="section-title fade-up">What I <span class="gradient-text">built</span></h2>
+    <p class="body-text fade-up">A cohesive, performant portal suite with shared design language, modular React architecture, and structured handoff documentation.</p>
+    <div class="row g-3 mt-2">
+      <div class="col-md-6"><div class="solution-card fade-up"><div class="sol-icon">⚡</div><h5>Performance Optimized Frontend</h5><p>React code-splitting, lazy loading, and image compression — reducing average page load time by 30% across all portals.</p></div></div>
+      <div class="col-md-6"><div class="solution-card fade-up"><div class="sol-icon">🧱</div><h5>Shared Component Library</h5><p>Reusable UI components in Figma and React — visual consistency across portals, reducing future development effort significantly.</p></div></div>
+      <div class="col-md-6"><div class="solution-card fade-up"><div class="sol-icon">🗂️</div><h5>Redesigned Dashboards</h5><p>3 clean, scalable dashboards with clearer information hierarchy, better data visualisation, and role-aware layouts for mixed teams.</p></div></div>
+      <div class="col-md-6"><div class="solution-card fade-up"><div class="sol-icon">📋</div><h5>Structured Dev Handoff</h5><p>Annotated Figma specs, component docs, and interaction notes — reducing back-and-forth between design and dev teams.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <span class="section-num-label fade-up">04 — The Impact</span>
+    <h2 class="section-title fade-up">Results that <span class="gradient-text">mattered</span></h2>
+    <p class="body-text fade-up">Measurable impact on both performance and experience, validating the combined design + development approach.</p>
+    <div class="row g-3 mt-2">
+      <div class="col-md-4"><div class="result-card fade-up"><div class="result-num">30%</div><div class="result-label">Reduction in frontend load time across all 3 portals</div></div></div>
+      <div class="col-md-4"><div class="result-card fade-up"><div class="result-num">20%</div><div class="result-label">Improvement in task success rate after usability testing</div></div></div>
+      <div class="col-md-4"><div class="result-card fade-up"><div class="result-num">15+</div><div class="result-label">Wireframes & prototypes delivered for rapid validation</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad bg-soft">
+  <div class="container">
+    <span class="section-num-label fade-up">05 — Learnings</span>
+    <h2 class="section-title fade-up">What I <span class="gradient-text">took away</span></h2>
+    <div class="row mt-3"><div class="col-lg-8">
+      <div class="learning-item fade-up"><div class="learning-icon"><i class="fas fa-bolt"></i></div><p>Performance is a design problem too — slow interfaces erode trust just as fast as confusing UI. Looping engineers in early surfaces constraints before they become blockers.</p></div>
+      <div class="learning-item fade-up"><div class="learning-icon"><i class="fas fa-layer-group"></i></div><p>Building a design system before touching any portal paid dividends immediately. Consistency became effortless once a shared visual language existed.</p></div>
+      <div class="learning-item fade-up"><div class="learning-icon"><i class="fas fa-users"></i></div><p>Mixed-team users have wildly different mental models. Testing with real users from each department surfaced issues no design review alone would have caught.</p></div>
+    </div></div>
+  </div>
+</section>
+
+<section class="cs-cta">
+  <div class="container">
+    <h2>Want to work together?</h2>
+    <p>I'm open to UI/UX and frontend opportunities. Let's build something great.</p>
+    <div class="d-flex gap-3 justify-content-center flex-wrap">
+      <a href="index.html#contact" class="btn-white"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+      <a href="index.html#projects" class="btn-white-outline"><i class="fas fa-arrow-left"></i> All Projects</a>
+    </div>
+  </div>
+</section>
+
+<button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 40);
+    document.getElementById('backToTop').classList.toggle('show', window.scrollY > 300);
+  });
+  document.getElementById('backToTop').addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+  const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
+  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
