@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AAFM India — Platform Redesign · Aditya Raghav</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="case-study.css">
+<link rel="stylesheet" href="global.css">
+</head>
+<body>
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav class="navbar" id="mainNav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">Aditya Raghav</a>
+
+    
+      <ul class="nav-links mb-0">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="/assets/Aditya_Raghav_UIUX_Product_Designer.pdf" class="nav-cta ms-2">Resume ↗</a></li>
+    </ul>
+
+    
+
+    <button class="navbar-toggler d-md-none" type="button" onclick="toggleMobileMenu()">
+      <i class="bi bi-list" style="font-size:1.2rem;"></i>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" style="display:none; padding:0.75rem 1rem 1rem; border-top:1px solid var(--border);">
+    <a href="#work" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">Work</a>
+    <a href="#design-system" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">Design System</a>
+    <a href="#about" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">About</a>
+    <a href="#contact" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">Contact</a>
+    <a href="/assets/Aditya_Raghav_UIUX_Product_Designer.pdf" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-primary);font-weight:500;">Resume ↗</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="cs-hero">
+  <div class="max-w-container">
+
+    <div class="hero-eyebrow fade-up">
+      <span class="hero-eyebrow-dot"></span>
+      Education + Fintech UX Case Study
+    </div>
+
+    <h1 class="cs-hero-title fade-up fade-up-d1">
+      Redesigning conversion-focused learning journeys for a <em>global finance certification platform.</em>
+    </h1>
+
+    <p class="cs-hero-desc fade-up fade-up-d2">
+      Worked on multiple high-impact pages across the AAFM India ecosystem including homepage redesigns, certification pages, accreditation flows, and conversion-focused experiences to improve clarity, trust, and course discoverability.
+    </p>
+
+    <!-- Meta strip -->
+    <div class="meta-strip fade-up fade-up-d3">
+      <div class="meta-item">
+        <div class="meta-key">Role</div>
+        <div class="meta-val">UI/UX Designer</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-key">Timeline</div>
+        <div class="meta-val">Ongoing Product Work</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-key">Platform</div>
+        <div class="meta-val">Web Platform</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-key">Industry</div>
+        <div class="meta-val">Finance Education</div>
+      </div>
+    </div>
+
+    <!-- Hero visual -->
+    <div class="cs-hero-visual fade-up">
+      <div class="mock-browser">
+        <div class="mock-browser-bar">
+          <div class="mock-dot r"></div>
+          <div class="mock-dot y"></div>
+          <div class="mock-dot g"></div>
+          <div class="mock-url-bar"></div>
+        </div>
+        <div class="mock-browser-body">
+          <div class="mock-page-hero">
+            <div class="mock-page-hero-label">AAFM India · Finance Certifications</div>
+            <div class="mock-page-h"></div>
+            <div class="mock-page-h sm"></div>
+            <span class="mock-page-cta">Explore Certifications →</span>
+          </div>
+          <div class="mock-page-cards">
+            <div class="mock-page-card">
+              <div class="mock-card-icon b"></div>
+              <div class="mock-card-line"></div>
+              <div class="mock-card-line s"></div>
+            </div>
+            <div class="mock-page-card">
+              <div class="mock-card-icon g"></div>
+              <div class="mock-card-line"></div>
+              <div class="mock-card-line s"></div>
+            </div>
+            <div class="mock-page-card">
+              <div class="mock-card-icon o"></div>
+              <div class="mock-card-line"></div>
+              <div class="mock-card-line s"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════ OVERVIEW ═══════════════════ -->
+<section class="cs-section" id="overview">
+  <div class="max-w-container">
+    <div class="cs-section-inner">
+
+      <div class="cs-section-label">
+        <div class="section-label-text">Overview</div>
+      </div>
+
+      <div class="cs-section-content fade-up">
+        <h2>The challenge</h2>
+
+        <p>
+          AAFM India offers multiple globally recognized finance certifications and professional learning programs. However, the platform experience contained fragmented navigation, dense informational layouts, and inconsistent visual hierarchy across key pages.
+        </p>
+
+        <p>
+          Users exploring certifications such as Chartered Wealth Manager (CWM®) often faced difficulty understanding eligibility, certification pathways, career outcomes, and program structure due to content-heavy interfaces.
+        </p>
+
+        <p>
+          The platform also required stronger trust-focused design patterns and clearer conversion flows to improve user confidence and inquiry generation.
+        </p>
+
+        <div class="cs-quote">
+          <p>"The goal wasn't just redesigning pages — it was creating a more structured and trustworthy learning ecosystem for finance professionals."</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SCOPE ═══════════════════ -->
+<section class="cs-section">
+  <div class="max-w-container">
+    <div class="cs-section-inner">
+
+      <div class="cs-section-label">
+        <div class="section-label-text">Scope</div>
+      </div>
+
+      <div class="cs-section-content fade-up">
+        <h2>Pages and experiences worked on</h2>
+
+        <div class="scope-grid">
+          <div class="scope-card">
+            <div class="scope-card-icon"><i class="bi bi-house"></i></div>
+            <h4>Homepage redesign</h4>
+            <p>Improved information hierarchy, trust-building sections, and certification discovery flows.</p>
+          </div>
+          <div class="scope-card">
+            <div class="scope-card-icon"><i class="bi bi-award"></i></div>
+            <h4>CWM® course pages</h4>
+            <p>Restructured long-form educational content into more scannable and conversion-focused layouts.</p>
+          </div>
+          <div class="scope-card">
+            <div class="scope-card-icon"><i class="bi bi-patch-check"></i></div>
+            <h4>Benefits & accreditation pages</h4>
+            <p>Designed credibility-driven sections focused on institutional trust and certification value.</p>
+          </div>
+          <div class="scope-card">
+            <div class="scope-card-icon"><i class="bi bi-send"></i></div>
+            <h4>Contact & thank-you flows</h4>
+            <p>Improved lead-generation journeys and post-submission reassurance experiences.</p>
+          </div>
+          <div class="scope-card">
+            <div class="scope-card-icon"><i class="bi bi-grid-1x2"></i></div>
+            <h4>Footer & navigation systems</h4>
+            <p>Created more structured navigation patterns for better discoverability across the platform.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ RESEARCH ═══════════════════ -->
+<section class="cs-section">
+  <div class="max-w-container">
+    <div class="cs-section-inner">
+
+      <div class="cs-section-label">
+        <div class="section-label-text">Research</div>
+      </div>
+
+      <div class="cs-section-content fade-up">
+        <h2>Understanding finance education user journeys</h2>
+
+        <p>
+          Conducted flow analysis and UX audits across course discovery, informational pages, and inquiry journeys to understand where users experienced confusion, hesitation, or drop-offs.
+        </p>
+
+        <div class="cs-list">
+          <div class="cs-list-item">
+            <div class="cs-list-num">01</div>
+            <div class="cs-list-body">
+              <h4>Information overload</h4>
+              <p>Users struggled to scan long-form course content and certification details efficiently.</p>
+            </div>
+          </div>
+          <div class="cs-list-item">
+            <div class="cs-list-num">02</div>
+            <div class="cs-list-body">
+              <h4>Weak content hierarchy</h4>
+              <p>Important sections such as career outcomes, eligibility, and accreditation lacked visual emphasis.</p>
+            </div>
+          </div>
+          <div class="cs-list-item">
+            <div class="cs-list-num">03</div>
+            <div class="cs-list-body">
+              <h4>Trust visibility issues</h4>
+              <p>Global recognition, accreditation, and institutional credibility were not sufficiently highlighted.</p>
+            </div>
+          </div>
+          <div class="cs-list-item">
+            <div class="cs-list-num">04</div>
+            <div class="cs-list-body">
+              <h4>Inconsistent navigation patterns</h4>
+              <p>Users moving between course pages and supporting content experienced fragmented structures.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-image-block">
+          <div class="cs-image-placeholder">
+            <div style="text-align:center;">
+              <div style="font-size:2rem;margin-bottom:0.75rem;opacity:0.3;"><i class="bi bi-diagram-3"></i></div>
+              <div style="font-size:0.8rem;color:var(--text-muted);font-weight:300;">aafm-research.jpg</div>
+            </div>
+          </div>
+          <div class="cs-image-caption">Mapping certification discovery and inquiry journeys across the platform.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ PROCESS ═══════════════════ -->
+<section class="cs-section" id="process">
+  <div class="max-w-container">
+    <div class="cs-section-inner">
+
+      <div class="cs-section-label">
+        <div class="section-label-text">Process</div>
+      </div>
+
+      <div class="cs-section-content fade-up">
+        <h2>Creating a scalable <em>educational</em> platform experience</h2>
+
+        <p>
+          The redesign focused on balancing informational depth with modern conversion-focused UX patterns.
+        </p>
+
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="process-step-left">
+              <div class="process-step-num">01</div>
+              <div class="process-step-line"></div>
+            </div>
+            <div class="process-step-body">
+              <h4>Structured content hierarchy</h4>
+              <p>Reorganized complex course information into modular, scannable content sections.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-left">
+              <div class="process-step-num">02</div>
+              <div class="process-step-line"></div>
+            </div>
+            <div class="process-step-body">
+              <h4>Trust-focused interfaces</h4>
+              <p>Highlighted accreditation, certification credibility, and career-focused outcomes throughout the experience.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-left">
+              <div class="process-step-num">03</div>
+              <div class="process-step-line"></div>
+            </div>
+            <div class="process-step-body">
+              <h4>Unified design consistency</h4>
+              <p>Created reusable UI patterns across homepage, course pages, accreditation pages, and inquiry flows.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-left">
+              <div class="process-step-num">04</div>
+              <div class="process-step-line"></div>
+            </div>
+            <div class="process-step-body">
+              <h4>Responsive frontend implementation</h4>
+              <p>Designed frontend-aware layouts optimized for desktop and mobile readability.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-image-block">
+          <div class="cs-image-placeholder">
+            <div style="text-align:center;">
+              <div style="font-size:2rem;margin-bottom:0.75rem;opacity:0.3;"><i class="bi bi-layout-text-sidebar"></i></div>
+              <div style="font-size:0.8rem;color:var(--text-muted);font-weight:300;">aafm-wireframes.jpg</div>
+            </div>
+          </div>
+          <div class="cs-image-caption">Early layout restructuring and modular content exploration for certification pages.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ DESIGN SYSTEM ═══════════════════ -->
+<section class="cs-section">
+  <div class="max-w-container">
+    <div class="cs-section-inner">
+
+      <div class="cs-section-label">
+        <div class="section-label-text">Design System</div>
+      </div>
+
+      <div class="cs-section-content fade-up">
+        <h2>Building reusable educational UI systems</h2>
+
+        <p>
+          Created scalable interface patterns and reusable modules that improved visual consistency and simplified future page expansion.
+        </p>
+
+        <div class="ds-items">
+          <div class="ds-item">
+            <div class="ds-item-icon"><i class="bi bi-grid" style="color:var(--accent-warm);font-size:0.9rem;"></i></div>
+            <div class="ds-item-body">
+              <h4>Reusable content modules</h4>
+              <p>Built repeatable layouts for certifications, benefits, FAQs, testimonials, and CTA sections.</p>
+            </div>
+          </div>
+          <div class="ds-item">
+            <div class="ds-item-icon"><i class="bi bi-patch-check" style="color:var(--accent-warm);font-size:0.9rem;"></i></div>
+            <div class="ds-item-body">
+              <h4>Trust-oriented UI components</h4>
+              <p>Introduced structured accreditation sections, recognition badges, and institutional credibility indicators.</p>
+            </div>
+          </div>
+          <div class="ds-item">
+            <div class="ds-item-icon"><i class="bi bi-code-slash" style="color:var(--accent-warm);font-size:0.9rem;"></i></div>
+            <div class="ds-item-body">
+              <h4>Frontend-aware design thinking</h4>
+              <p>Layouts and spacing systems were optimized for responsive implementation and scalability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ IMPACT ═══════════════════ -->
+<section class="cs-section" id="outcomes">
+  <div class="max-w-container">
+    <div class="cs-section-inner">
+
+      <div class="cs-section-label">
+        <div class="section-label-text">Impact</div>
+      </div>
+
+      <div class="cs-section-content fade-up">
+        <h2>Improving clarity, trust, and <em>discoverability</em></h2>
+
+        <p>
+          The redesigned experiences created a more modern and conversion-oriented educational platform while improving the structure and usability of finance certification content.
+        </p>
+
+        <div class="cs-metrics">
+          <div class="cs-metric">
+            <div class="cs-metric-value"><span>10+</span></div>
+            <div class="cs-metric-label">Business-critical pages redesigned</div>
+          </div>
+          <div class="cs-metric">
+            <div class="cs-metric-value" style="font-size:1.4rem;"><span>Unified</span></div>
+            <div class="cs-metric-label">Consistent UI patterns across the platform</div>
+          </div>
+          <div class="cs-metric">
+            <div class="cs-metric-value" style="font-size:1.4rem;"><span>Improved</span></div>
+            <div class="cs-metric-label">Information hierarchy and conversion clarity</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SHOWCASE ═══════════════════ -->
+<section class="cs-section">
+  <div class="max-w-container">
+    <div class="cs-section-inner">
+
+      <div class="cs-section-label">
+        <div class="section-label-text">Showcase</div>
+      </div>
+
+      <div class="cs-section-content fade-up">
+        <h2>Key pages redesigned</h2>
+
+        <div class="showcase-list">
+          <div class="showcase-item">
+            <div class="showcase-num">01</div>
+            <div class="showcase-item-body">
+              <h4>Home Page</h4>
+              <p>Focused on certification discovery, trust-building, and lead generation.</p>
+            </div>
+            <i class="bi bi-arrow-up-right showcase-arrow"></i>
+          </div>
+          <div class="showcase-item">
+            <div class="showcase-num">02</div>
+            <div class="showcase-item-body">
+              <h4>Chartered Wealth Manager (CWM®)</h4>
+              <p>Improved readability and simplified complex certification information.</p>
+            </div>
+            <i class="bi bi-arrow-up-right showcase-arrow"></i>
+          </div>
+          <div class="showcase-item">
+            <div class="showcase-num">03</div>
+            <div class="showcase-item-body">
+              <h4>Benefits Pages</h4>
+              <p>Designed more engaging storytelling layouts focused on value communication.</p>
+            </div>
+            <i class="bi bi-arrow-up-right showcase-arrow"></i>
+          </div>
+          <div class="showcase-item">
+            <div class="showcase-num">04</div>
+            <div class="showcase-item-body">
+              <h4>Accreditation Pages</h4>
+              <p>Enhanced institutional credibility through structured trust-focused UI sections.</p>
+            </div>
+            <i class="bi bi-arrow-up-right showcase-arrow"></i>
+          </div>
+          <div class="showcase-item">
+            <div class="showcase-num">05</div>
+            <div class="showcase-item-body">
+              <h4>Thank You & Contact Flows</h4>
+              <p>Created reassuring post-conversion experiences for inquiry submissions.</p>
+            </div>
+            <i class="bi bi-arrow-up-right showcase-arrow"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ REFLECTION ═══════════════════ -->
+<section class="cs-section">
+  <div class="max-w-container">
+    <div class="cs-section-inner">
+
+      <div class="cs-section-label">
+        <div class="section-label-text">Reflection</div>
+      </div>
+
+      <div class="cs-section-content fade-up">
+        <h2>Key learnings</h2>
+
+        <p>
+          This project strengthened my understanding of designing for education and finance ecosystems where users require both informational depth and decision-making confidence.
+        </p>
+
+        <p>
+          Working across multiple interconnected pages helped me think beyond isolated screens and focus on scalable systems, structured content hierarchy, and conversion-focused UX.
+        </p>
+
+        <p>
+          The experience also improved my ability to balance business goals, trust-building, and frontend-aware implementation within content-heavy interfaces.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ NEXT CASE ═══════════════════ -->
+<section class="next-case-section">
+  <div class="max-w-container">
+    <div class="next-case-label">Next Case Study</div>
+    <h2 class="next-case-title">Legal Workflow &<br><em>Document Management Platform</em></h2>
+    <a href="case-study-legaltech.html" class="btn-next-case">
+      View Case Study <i class="bi bi-arrow-right"></i>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="max-w-container">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-4">
+        <div class="footer-logo">Aditya Raghav</div>
+        <p class="footer-desc">Crafting scalable, user-focused digital experiences across healthcare, fintech, and enterprise products.</p>
+      </div>
+      <div class="col-lg-4 offset-lg-4">
+        <div style="font-size:0.65rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:0.875rem;">Navigation</div>
+        <div class="footer-links">
+          <a href="index.html#work" class="footer-link">Work</a>
+          <a href="index.html#design-system" class="footer-link">Design System</a>
+          <a href="index.html#about" class="footer-link">About</a>
+          <a href="index.html#contact" class="footer-link">Contact</a>
+          <a href="index.html#" class="footer-link">Resume</a>
+          <a href="https://linkedin.com/in/aryaraghav8" class="footer-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Aditya Raghav. All rights reserved.</div>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/aryaraghav8" class="footer-social-link" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:aryaraghav8@gmail.com" class="footer-social-link"><i class="bi bi-envelope"></i></a>
+        <a href="#" class="footer-social-link"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Navbar scroll
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+// Fade-up on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Animate hero on load
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.cs-hero .fade-up').forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), 80 + i * 100);
+  });
+});
+</script>
+
+</body>
+</html>

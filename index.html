@@ -1,780 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aditya Raghav | UI/UX Designer & Frontend Developer</title>
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Raghav — Product Designer & Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="global.css">
 </head>
 <body>
 
-  <!-- ======= NAVBAR ======= -->
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand logo-mark" href="#home">AR</a>
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav class="navbar" id="mainNav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">Aditya Raghav</a>
 
-      <button class="navbar-toggler border-0 shadow-none" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
-        <span class="toggler-line"></span>
-        <span class="toggler-line"></span>
-        <span class="toggler-line"></span>
-      </button>
+    
+      <ul class="nav-links mb-0">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="/assets/Aditya_Raghav_UIUX_Product_Designer.pdf" class="nav-cta ms-2">Resume ↗</a></li>
+    </ul>
 
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#prototypes">Prototypes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item ms-lg-2">
-            <a class="btn btn-primary-custom rounded-pill px-4 py-2"
-               href="assets/Aditya_Raghav_UI-UX_Designer.pdf" target="_blank">
-              <i class="fas fa-download me-1"></i> Resume
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    
 
-  <!-- ======= HERO ======= -->
-  <section id="home" class="hero-section d-flex align-items-center">
-    <div class="container">
-      <div class="row align-items-center gy-5">
-
-        <div class="col-lg-7" data-aos="fade-up">
-          <span class="hero-pill mb-3 d-inline-block">
-            <i class="fas fa-circle dot-blink me-2"></i>UI/UX Designer &amp; Developer
-          </span>
-
-          <h1 class="hero-title mb-3">
-            Hello, I'm<br />
-            <span class="gradient-text">Aditya Raghav</span>
-          </h1>
-
-          <p class="hero-desc mb-4">
-            I craft <strong>intuitive</strong> digital experiences that blend
-            <strong>beautiful design</strong> with <strong>functional code</strong>.
-          </p>
-
-          <div class="row g-3 mb-4">
-            <div class="col-4">
-              <div class="stat-card text-center p-3">
-                <div class="stat-num">
-                  <span class="counter" data-target="2">0</span>+
-                </div>
-                <div class="stat-label">Years Exp.</div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="stat-card text-center p-3">
-                <div class="stat-num">
-                  <span class="counter" data-target="20">0</span>+
-                </div>
-                <div class="stat-label">UI Screens</div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="stat-card text-center p-3">
-                <div class="stat-num">
-                  <span class="counter" data-target="10">0</span>+
-                </div>
-                <div class="stat-label">Projects</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="d-flex flex-wrap gap-3">
-            <a href="#projects" class="btn btn-primary-custom rounded-pill px-4 py-2">
-              View My Work <i class="fas fa-arrow-right ms-2"></i>
-            </a>
-            <a href="#contact" class="btn btn-outline-custom rounded-pill px-4 py-2">
-              Get In Touch <i class="fas fa-paper-plane ms-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-5 d-flex justify-content-center" data-aos="fade-left" data-aos-delay="150">
-          <div class="hero-code-card">
-            <div class="code-header d-flex gap-2 mb-3">
-              <span class="dot red"></span>
-              <span class="dot yellow"></span>
-              <span class="dot green"></span>
-            </div>
-            <pre class="code-body mb-3"><code><span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-val">"designer"</span><span class="c-tag">&gt;</span>
-  <span class="c-tag">&lt;h1&gt;</span>Beautiful Design<span class="c-tag">&lt;/h1&gt;</span>
-  <span class="c-tag">&lt;p&gt;</span>+ Functional Code<span class="c-tag">&lt;/p&gt;</span>
-  <span class="c-tag">&lt;span&gt;</span>= Great UX<span class="c-tag">&lt;/span&gt;</span>
-<span class="c-tag">&lt;/div&gt;</span></code></pre>
-            <div class="d-flex gap-2 flex-wrap">
-              <span class="tool-badge"><i class="fab fa-figma me-1"></i>Figma</span>
-              <span class="tool-badge"><i class="fab fa-react me-1"></i>React</span>
-              <span class="tool-badge"><i class="fab fa-js me-1"></i>JavaScript</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= TICKER ======= -->
-  <div class="skills-ticker py-3" aria-hidden="true">
-    <div class="ticker-track">
-      <span><i class="fab fa-figma me-2"></i>Figma</span>
-      <span><i class="fab fa-html5 me-2"></i>HTML5</span>
-      <span><i class="fab fa-css3-alt me-2"></i>CSS3</span>
-      <span><i class="fab fa-js me-2"></i>JavaScript</span>
-      <span><i class="fab fa-react me-2"></i>React</span>
-      <span><i class="fas fa-paint-brush me-2"></i>UI Design</span>
-      <span><i class="fas fa-user-check me-2"></i>UX Research</span>
-      <span><i class="fas fa-robot me-2"></i>AI Tools</span>
-      <span><i class="fab fa-figma me-2"></i>Figma</span>
-      <span><i class="fab fa-html5 me-2"></i>HTML5</span>
-      <span><i class="fab fa-css3-alt me-2"></i>CSS3</span>
-      <span><i class="fab fa-js me-2"></i>JavaScript</span>
-      <span><i class="fab fa-react me-2"></i>React</span>
-      <span><i class="fas fa-paint-brush me-2"></i>UI Design</span>
-      <span><i class="fas fa-user-check me-2"></i>UX Research</span>
-      <span><i class="fas fa-robot me-2"></i>AI Tools</span>
-    </div>
+    <button class="navbar-toggler d-md-none" type="button" onclick="toggleMobileMenu()">
+      <i class="bi bi-list" style="font-size:1.2rem;"></i>
+    </button>
   </div>
 
-  <!-- ======= PROTOTYPES ======= -->
-  <section id="prototypes" class="section-pad bg-soft">
-    <div class="container">
-      <div class="section-header text-center mb-5" data-aos="fade-up">
-        <span class="section-tag">Design Work</span>
-        <h2 class="section-title">Latest <span class="gradient-text">Prototypes</span></h2>
-        <p class="section-sub">Interactive designs and user flows</p>
-      </div>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" style="display:none; padding:0.75rem 1rem 1rem; border-top:1px solid var(--border);">
+    <a href="#work" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">Work</a>
+    <a href="#design-system" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">Design System</a>
+    <a href="#about" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">About</a>
+    <a href="#contact" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">Contact</a>
+    <a href="/assets/Aditya_Raghav_UIUX_Product_Designer.pdf" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-primary);font-weight:500;">Resume ↗</a>
+  </div>
+</nav>
 
-      <div class="row g-4">
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero">
+  <div class="max-w-container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="hero-eyebrow">Available for new opportunities</div>
 
-        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-card h-100">
-            <div class="project-img-wrap">
-              <img src="/assets/images/swasthgram_app.png"
-                alt="Dashboard Prototype" class="project-img" />
-              <div class="project-overlay">
-                <div class="d-flex gap-2 flex-wrap justify-content-center">
-                  <span class="overlay-tag">Figma</span>
-                  <span class="overlay-tag">Interactive</span>
-                  <span class="overlay-tag">UX</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-body p-4">
-              <div class="proj-num">P1</div>
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h3 class="proj-title">Donation App</h3>
-                <div class="d-flex gap-2">
-                  <a href="#" class="proj-icon-btn"><i class="fas fa-external-link-alt"></i></a>
-                  <a href="#" class="proj-icon-btn"><i class="fab fa-figma"></i></a>
-                </div>
-              </div>
-              <p class="proj-desc">Interactive donation app design with modern UI components.</p>
-              <div class="d-flex gap-3 mb-3 flex-wrap">
-                <span class="proj-stat"><i class="fas fa-mouse-pointer me-1"></i>Interactive</span>
-                <span class="proj-stat"><i class="fas fa-mobile-alt me-1"></i>Responsive</span>
-              </div>
-              <a href="https://www.figma.com/proto/59i5F4tpp5Dzu4nVSmlfRJ/Swasthgram-2.0?node-id=1050-3779&p=f&viewport=256%2C103%2C0.07&t=peeS2lYMc65NYrov-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1050%3A3854&page-id=0%3A1" class="btn-text-link">View Prototype <i class="fas fa-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
+        <h1 class="hero-heading">
+          Designing <em>scalable</em><br>product experiences<br>for complex workflows.
+        </h1>
 
-        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-card h-100">
-            <div class="project-img-wrap">
-              <img src="/assets/images/LT.png"
-                alt="Mobile App Prototype" class="project-img" />
-              <div class="project-overlay">
-                <div class="d-flex gap-2 flex-wrap justify-content-center">
-                  <span class="overlay-tag">Figma</span>
-                  <span class="overlay-tag">Mobile</span>
-                  <span class="overlay-tag">UI</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-body p-4">
-              <div class="proj-num">P2</div>
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h3 class="proj-title">LT(lab technician) App</h3>
-                <div class="d-flex gap-2">
-                  <a href="#" class="proj-icon-btn"><i class="fas fa-external-link-alt"></i></a>
-                  <a href="#" class="proj-icon-btn"><i class="fab fa-figma"></i></a>
-                </div>
-              </div>
-              <p class="proj-desc">User-friendly mobile app designed for lab technicians to easily record blood test results, generate reports through a simple, intuitive interface with smooth interactions.</p>
-              <div class="d-flex gap-3 mb-3 flex-wrap">
-                <span class="proj-stat"><i class="fas fa-hand-pointer me-1"></i>Touch-friendly</span>
-                <span class="proj-stat"><i class="fas fa-heart me-1"></i>User-centric</span>
-              </div>
-              <a href="https://www.figma.com/proto/xcl7G4oXEV6w8iTdWGqqIl/Accuster-LT-app?node-id=0-2622&p=f&viewport=547%2C128%2C0.08&t=X4oO635aIoo7MjZD-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=0%3A2622&page-id=0%3A1" class="btn-text-link">View Prototype <i class="fas fa-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-card h-100">
-            <div class="project-img-wrap">
-              <img src="/assets/images/microscope_app.png"
-                alt="Mobile App Prototype" class="project-img" />
-              <div class="project-overlay">
-                <div class="d-flex gap-2 flex-wrap justify-content-center">
-                  <span class="overlay-tag">Figma</span>
-                  <span class="overlay-tag">Mobile</span>
-                  <span class="overlay-tag">UI</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-body p-4">
-              <div class="proj-num">P2</div>
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h3 class="proj-title">Mocroscope App</h3>
-                <div class="d-flex gap-2">
-                  <a href="#" class="proj-icon-btn"><i class="fas fa-external-link-alt"></i></a>
-                  <a href="#" class="proj-icon-btn"><i class="fab fa-figma"></i></a>
-                </div>
-              </div>
-              <p class="proj-desc">User-friendly mobile app that connects to an automated microscope via Bluetooth, enabling lab technicians to seamlessly perform tests, capture data, and streamline the diagnostic process through an intuitive and efficient interface.</p>
-              <div class="d-flex gap-3 mb-3 flex-wrap">
-                <span class="proj-stat"><i class="fas fa-hand-pointer me-1"></i>Touch-friendly</span>
-                <span class="proj-stat"><i class="fas fa-heart me-1"></i>User-centric</span>
-              </div>
-              <a href="https://www.figma.com/proto/HP6gggGnij5gBSvcjXJ2nw/Microscope-2.0?node-id=1-1218&p=f&viewport=204%2C400%2C0.29&t=C98fsV5rWpe01OvJ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A1218&page-id=0%3A1">View Prototype <i class="fas fa-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-card h-100">
-            <div class="project-img-wrap">
-              <img src="/assets/images/swasthgram_web.png"
-                alt="Mobile App Prototype" class="project-img" />
-              <div class="project-overlay">
-                <div class="d-flex gap-2 flex-wrap justify-content-center">
-                  <span class="overlay-tag">Figma</span>
-                  <span class="overlay-tag">Mobile</span>
-                  <span class="overlay-tag">UI</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-body p-4">
-              <div class="proj-num">P2</div>
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h3 class="proj-title">Swasthgram donation website</h3>
-                <div class="d-flex gap-2">
-                  <a href="#" class="proj-icon-btn"><i class="fas fa-external-link-alt"></i></a>
-                  <a href="#" class="proj-icon-btn"><i class="fab fa-figma"></i></a>
-                </div>
-              </div>
-              <p class="proj-desc">User-friendly website designed to collect donations seamlessly, allowing users to contribute easily through a secure, intuitive interface with clear navigation and engaging interactions that encourage trust and participation.</p>
-              <div class="d-flex gap-3 mb-3 flex-wrap">
-                <span class="proj-stat"><i class="fas fa-hand-pointer me-1"></i>Touch-friendly</span>
-                <span class="proj-stat"><i class="fas fa-heart me-1"></i>User-centric</span>
-              </div>
-              <a href="https://www.figma.com/proto/59i5F4tpp5Dzu4nVSmlfRJ/Swasthgram-2.0?node-id=1300-2241&p=f&viewport=342%2C384%2C0.09&t=MPD455UpUWW4JpRm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1300%3A2241&page-id=1253%3A2"></i></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= PROJECTS ======= -->
-  <section id="projects" class="section-pad">
-    <div class="container">
-      <div class="section-header text-center mb-5" data-aos="fade-up">
-        <span class="section-tag">My Work</span>
-        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-        <p class="section-sub">Real-world projects showcasing my design and development skills</p>
-      </div>
-
-      <div class="row g-4">
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-card h-100">
-            <div class="project-img-wrap">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
-                alt="Internal Web Portals" class="project-img" />
-              <div class="project-overlay">
-                <div class="d-flex gap-2 flex-wrap justify-content-center">
-                  <span class="overlay-tag">Figma</span>
-                  <span class="overlay-tag">React</span>
-                  <span class="overlay-tag">UX</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-body p-4">
-              <div class="proj-num">01</div>
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h3 class="proj-title">Internal Web Portals</h3>
-                <div class="d-flex gap-2">
-                  <a href="#" class="proj-icon-btn"><i class="fas fa-external-link-alt"></i></a>
-                  <a href="#" class="proj-icon-btn"><i class="fab fa-github"></i></a>
-                </div>
-              </div>
-              <p class="proj-desc">3 internal dashboards focused on clean UI, reusable components, and scalability.</p>
-              <div class="d-flex gap-3 mb-3 flex-wrap">
-                <span class="proj-stat"><i class="fas fa-chart-line me-1"></i>30% Faster Load</span>
-                <span class="proj-stat"><i class="fas fa-users me-1"></i>20% Better UX</span>
-              </div>
-              <a href="/case-study-portals.html" class="btn-text-link">View Case Study <i class="fas fa-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-card h-100">
-            <div class="project-img-wrap">
-              <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80"
-                alt="Website Creation" class="project-img" />
-              <div class="project-overlay">
-                <div class="d-flex gap-2 flex-wrap justify-content-center">
-                  <span class="overlay-tag">HTML</span>
-                  <span class="overlay-tag">CSS</span>
-                  <span class="overlay-tag">JavaScript</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-body p-4">
-              <div class="proj-num">02</div>
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h3 class="proj-title">Websites from Scratch</h3>
-                <div class="d-flex gap-2">
-                  <a href="#" class="proj-icon-btn"><i class="fas fa-external-link-alt"></i></a>
-                  <a href="#" class="proj-icon-btn"><i class="fab fa-github"></i></a>
-                </div>
-              </div>
-              <p class="proj-desc">Built 3 full websites with HTML, CSS &amp; JavaScript — user-centric &amp; responsive.</p>
-              <div class="d-flex gap-3 mb-3 flex-wrap">
-                <span class="proj-stat"><i class="fas fa-mobile-alt me-1"></i>Fully Responsive</span>
-                <span class="proj-stat"><i class="fas fa-check-circle me-1"></i>User-Centric</span>
-              </div>
-              <a href="/case-study-websites.html" class="btn-text-link">View Case Study <i class="fas fa-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="project-card h-100">
-            <div class="project-img-wrap">
-              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80"
-                alt="WordPress Enhancements" class="project-img" />
-              <div class="project-overlay">
-                <div class="d-flex gap-2 flex-wrap justify-content-center">
-                  <span class="overlay-tag">WordPress</span>
-                  <span class="overlay-tag">UI/UX</span>
-                  <span class="overlay-tag">QA</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-body p-4">
-              <div class="proj-num">03</div>
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h3 class="proj-title">WordPress Enhancements</h3>
-                <div class="d-flex gap-2">
-                  <a href="#" class="proj-icon-btn"><i class="fas fa-external-link-alt"></i></a>
-                  <a href="#" class="proj-icon-btn"><i class="fab fa-github"></i></a>
-                </div>
-              </div>
-              <p class="proj-desc">Improved UI/UX for 4 WordPress sites — navigation, responsiveness &amp; engagement.</p>
-              <div class="d-flex gap-3 mb-3 flex-wrap">
-                <span class="proj-stat"><i class="fas fa-eye me-1"></i>4 Websites</span>
-                <span class="proj-stat"><i class="fas fa-tachometer-alt me-1"></i>Cross-browser</span>
-              </div>
-              <a href="/case-study-wordpress.html" class="btn-text-link">View Case Study <i class="fas fa-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="text-center mt-5" data-aos="fade-up">
-        <a href="#" class="btn btn-primary-custom rounded-pill px-5 py-2">
-          View All Projects <i class="fas fa-arrow-right ms-2"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= SKILLS ======= -->
-  <section id="skills" class="section-pad bg-soft">
-    <div class="container">
-      <div class="section-header text-center mb-5" data-aos="fade-up">
-        <span class="section-tag">Expertise</span>
-        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
-      </div>
-
-      <div class="row g-4">
-
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="skill-card h-100 p-4">
-            <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
-              <h3 class="mb-0">Design &amp; Prototyping</h3>
-            </div>
-            <div class="d-flex flex-column gap-3">
-              <div>
-                <div class="d-flex justify-content-between mb-1"><span>Figma</span><span class="text-primary-custom fw-600">95%</span></div>
-                <div class="progress skill-progress"><div class="progress-bar" style="width:95%"></div></div>
-              </div>
-              <div>
-                <div class="d-flex justify-content-between mb-1"><span>UI/UX Design</span><span class="text-primary-custom fw-600">90%</span></div>
-                <div class="progress skill-progress"><div class="progress-bar" style="width:90%"></div></div>
-              </div>
-              <div>
-                <div class="d-flex justify-content-between mb-1"><span>Prototyping</span><span class="text-primary-custom fw-600">85%</span></div>
-                <div class="progress skill-progress"><div class="progress-bar" style="width:85%"></div></div>
-              </div>
-              <div>
-                <div class="d-flex justify-content-between mb-1"><span>Design Systems</span><span class="text-primary-custom fw-600">88%</span></div>
-                <div class="progress skill-progress"><div class="progress-bar" style="width:88%"></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="skill-card h-100 p-4">
-            <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="skill-icon"><i class="fas fa-code"></i></div>
-              <h3 class="mb-0">Frontend Development</h3>
-            </div>
-            <div class="d-flex flex-column gap-3">
-              <div>
-                <div class="d-flex justify-content-between mb-1"><span>HTML / CSS</span><span class="text-primary-custom fw-600">95%</span></div>
-                <div class="progress skill-progress"><div class="progress-bar" style="width:95%"></div></div>
-              </div>
-              <div>
-                <div class="d-flex justify-content-between mb-1"><span>JavaScript</span><span class="text-primary-custom fw-600">80%</span></div>
-                <div class="progress skill-progress"><div class="progress-bar" style="width:80%"></div></div>
-              </div>
-              <div>
-                <div class="d-flex justify-content-between mb-1"><span>React</span><span class="text-primary-custom fw-600">82%</span></div>
-                <div class="progress skill-progress"><div class="progress-bar" style="width:82%"></div></div>
-              </div>
-              <div>
-                <div class="d-flex justify-content-between mb-1"><span>Responsive Design</span><span class="text-primary-custom fw-600">92%</span></div>
-                <div class="progress skill-progress"><div class="progress-bar" style="width:92%"></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="skill-card h-100 p-4">
-            <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="skill-icon"><i class="fas fa-tools"></i></div>
-              <h3 class="mb-0">Tools &amp; Methodologies</h3>
-            </div>
-            <div class="d-flex flex-wrap gap-2">
-              <span class="skill-tag">User Research</span>
-              <span class="skill-tag">Wireframing</span>
-              <span class="skill-tag">Usability Testing</span>
-              <span class="skill-tag">Info Architecture</span>
-              <span class="skill-tag">Agile / Scrum</span>
-              <span class="skill-tag">Developer Handoff</span>
-              <span class="skill-tag">Canva</span>
-              <span class="skill-tag">Photoshop</span>
-              <span class="skill-tag">ChatGPT</span>
-              <span class="skill-tag">Claude AI</span>
-              <span class="skill-tag">Stitch</span>
-              <span class="skill-tag">Cross-functional Collab</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= ABOUT ======= -->
-  <section id="about" class="section-pad">
-    <div class="container">
-      <div class="section-header text-center mb-5" data-aos="fade-up">
-        <span class="section-tag">About Me</span>
-        <h2 class="section-title">Designer <span class="gradient-text">Who</span> Codes</h2>
-      </div>
-
-      <div class="row g-5 align-items-center">
-
-        <div class="col-lg-6" data-aos="fade-right">
-          <p class="about-text mb-3">
-            With a unique background in both <strong>design</strong> and <strong>development</strong>,
-            I bridge the gap between beautiful interfaces and functional code.
-          </p>
-          <p class="about-text mb-4">
-            Currently at <strong>AAFM India</strong>, I craft high-fidelity UI screens, design systems,
-            and interactive prototypes in agile environments. My earlier experience at
-            <strong>Accuster Technologies</strong> shaped my ability to build scalable React
-            applications and optimize frontend performance.
-          </p>
-
-          <div class="d-flex flex-column gap-3">
-            <div class="about-highlight d-flex align-items-start gap-3">
-              <div class="about-icon flex-shrink-0"><i class="fas fa-lightbulb"></i></div>
-              <div>
-                <h5 class="mb-1">Creative Problem Solver</h5>
-                <p class="mb-0 text-muted small">Turning complex challenges into elegant solutions</p>
-              </div>
-            </div>
-            <div class="about-highlight d-flex align-items-start gap-3">
-              <div class="about-icon flex-shrink-0"><i class="fas fa-handshake"></i></div>
-              <div>
-                <h5 class="mb-1">Team Collaborator</h5>
-                <p class="mb-0 text-muted small">Bridging design and development teams effectively</p>
-              </div>
-            </div>
-            <div class="about-highlight d-flex align-items-start gap-3">
-              <div class="about-icon flex-shrink-0"><i class="fas fa-rocket"></i></div>
-              <div>
-                <h5 class="mb-1">Fast Learner</h5>
-                <p class="mb-0 text-muted small">Quickly adapting to new tools and technologies</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
-          <div class="timeline ps-3">
-
-            <div class="timeline-item mb-4 position-relative">
-              <div class="tl-dot"></div>
-              <div class="tl-body p-4">
-                <span class="tl-badge mb-2 d-inline-block">Current Role</span>
-                <h5 class="mb-1">UI/UX Designer &amp; Frontend Developer</h5>
-                <p class="tl-company mb-1">AAFM India</p>
-                <p class="tl-date mb-2">
-                  <i class="fas fa-calendar-alt me-1"></i>Oct 2025 – Present &middot; New Delhi
-                </p>
-                <p class="mb-0 text-muted small">
-                  30+ UI screens across dashboards, onboarding flows &amp; landing pages. Design systems, interactive prototypes, agile sprint cycles.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item position-relative">
-              <div class="tl-dot"></div>
-              <div class="tl-body p-4">
-                <h5 class="mb-1">Software Engineer | UI/UX &amp; Frontend Developer</h5>
-                <p class="tl-company mb-1">Accuster Technologies Pvt. Ltd</p>
-                <p class="tl-date mb-2">
-                  <i class="fas fa-calendar-alt me-1"></i>Nov 2023 – Oct 2025 &middot; New Delhi
-                </p>
-                <p class="mb-0 text-muted small">
-                  20+ user interfaces for web &amp; mobile. Built React apps (mysehat.ai, sehat.drlabike.in). Load time reduced by 30%, usability +20%.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= CONTACT ======= -->
-  <section id="contact" class="section-pad bg-soft">
-    <div class="container">
-      <div class="section-header text-center mb-5" data-aos="fade-up">
-        <span class="section-tag">Get In Touch</span>
-        <h2 class="section-title">Let's <span class="gradient-text">Work Together</span></h2>
-        <p class="section-sub">Have a project in mind? Let's create something amazing!</p>
-      </div>
-
-      <div class="row g-5">
-
-        <div class="col-lg-5" data-aos="fade-right">
-          <h4 class="fw-bold mb-4">Contact Information</h4>
-
-          <div class="d-flex flex-column gap-3 mb-4">
-            <a href="mailto:aryaraghav8@gmail.com"
-               class="contact-item d-flex align-items-center gap-3 text-decoration-none">
-              <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
-              <div class="flex-grow-1">
-                <div class="contact-label">Email</div>
-                <div class="contact-value">aryaraghav8@gmail.com</div>
-              </div>
-              <i class="fas fa-arrow-right contact-arrow"></i>
-            </a>
-
-            <a href="tel:+919756674995"
-               class="contact-item d-flex align-items-center gap-3 text-decoration-none">
-              <div class="contact-icon-box"><i class="fas fa-phone"></i></div>
-              <div class="flex-grow-1">
-                <div class="contact-label">Phone</div>
-                <div class="contact-value">+91 9756674995</div>
-              </div>
-              <i class="fas fa-arrow-right contact-arrow"></i>
-            </a>
-
-            <div class="contact-item d-flex align-items-center gap-3">
-              <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="flex-grow-1">
-                <div class="contact-label">Location</div>
-                <div class="contact-value">Noida, India</div>
-                <div class="contact-sub">Available for remote work</div>
-              </div>
-            </div>
-
-            <a href="https://linkedin.com/in/aryaraghav8/" target="_blank"
-               class="contact-item d-flex align-items-center gap-3 text-decoration-none">
-              <div class="contact-icon-box"><i class="fab fa-linkedin"></i></div>
-              <div class="flex-grow-1">
-                <div class="contact-label">LinkedIn</div>
-                <div class="contact-value">linkedin.com/in/aryaraghav8</div>
-              </div>
-              <i class="fas fa-arrow-right contact-arrow"></i>
-            </a>
-          </div>
-
-          <div class="d-flex gap-3">
-            <a href="#" class="social-btn"><i class="fab fa-dribbble"></i></a>
-            <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
-            <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
-            <a href="#" class="social-btn"><i class="fab fa-codepen"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="150">
-          <div class="contact-form-card p-4 p-lg-5">
-            <form id="contactForm" novalidate>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input type="text" class="form-control custom-input" id="ctName"
-                      placeholder="Your Name" required />
-                    <label for="ctName">Your Name</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input type="email" class="form-control custom-input" id="ctEmail"
-                      placeholder="Email Address" required />
-                    <label for="ctEmail">Email Address</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input type="text" class="form-control custom-input" id="ctSubject"
-                      placeholder="Subject" required />
-                    <label for="ctSubject">Subject</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <textarea class="form-control custom-input" id="ctMessage"
-                      placeholder="Your Message" style="height:140px" required></textarea>
-                    <label for="ctMessage">Your Message</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary-custom w-100 rounded-pill py-3" id="submitBtn">
-                    <span class="btn-label">Send Message</span>
-                    <i class="fas fa-paper-plane ms-2"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= FOOTER ======= -->
-  <footer class="site-footer py-5">
-    <div class="container">
-      <div class="row g-4 mb-4">
-
-        <div class="col-lg-4">
-          <div class="d-flex align-items-center gap-3 mb-3">
-            <span class="logo-mark">AR</span>
-            <div>
-              <h5 class="mb-0 fw-bold text-white">Aditya Raghav</h5>
-              <small class="text-muted">UI/UX Designer &amp; Frontend Developer</small>
-            </div>
-          </div>
-          <p class="text-muted small">
-            Crafting user-centric digital experiences across web and mobile platforms.
-          </p>
-        </div>
-
-        <div class="col-6 col-lg-2 offset-lg-1">
-          <h6 class="footer-heading mb-3">Quick Links</h6>
-          <ul class="list-unstyled footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#prototypes">Prototypes</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-lg-2">
-          <h6 class="footer-heading mb-3">Resources</h6>
-          <ul class="list-unstyled footer-links">
-            <li><a href="assets/Aditya_Raghav_UI-UX_Designer.pdf" target="_blank">Resume</a></li>
-            <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Design Process</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3">
-          <h6 class="footer-heading mb-3">Ready to start?</h6>
-          <a href="mailto:aryaraghav8@gmail.com"
-             class="btn btn-outline-custom rounded-pill px-4 py-2 d-inline-block mb-3">
-            Let's Talk <i class="fas fa-arrow-right ms-2"></i>
-          </a>
-          <div class="d-flex gap-2">
-            <a href="#" class="social-btn sm"><i class="fab fa-dribbble"></i></a>
-            <a href="#" class="social-btn sm"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/aryaraghav8/" target="_blank" class="social-btn sm">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-      <hr class="footer-divider" />
-
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-        <p class="mb-0 text-muted small">&copy; 2025 Aditya Raghav. All rights reserved.</p>
-        <p class="mb-0 text-muted small">
-          Designed &amp; Developed with <span class="text-accent">❤️</span> by Aditya Raghav
+        <p class="hero-desc">
+          Product Designer & Frontend Developer focused on healthcare, fintech, and enterprise products. I simplify complex workflows into intuitive, developer-friendly interfaces.
         </p>
+
+        <div class="hero-actions">
+          <a href="#work" class="btn-primary-custom">
+            View Case Studies <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-secondary-custom">
+            Get In Touch
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value">2+</div>
+            <div class="stat-label">Years in Product Design</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">30+</div>
+            <div class="stat-label">Interfaces Shipped</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Industry Verticals</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">10+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="hero-visual">
+          
+          <!-- Main dashboard card -->
+          <div class="hero-card-main">
+            <img src="/assets/images/Dshboard_accuster.png" alt="Dashboard Mockup" class="hero-card-img">
+          </div>
+
+          <!-- Float – top left -->
+          <div class="hero-card-float float">
+            <div class="float-title">Design Expertise</div>
+            <div class="float-tags">
+              <span class="float-tag">Healthcare UX</span>
+              <span class="float-tag">Fintech</span>
+              <span class="float-tag">Design Systems</span>
+              <span class="float-tag">React</span>
+              <span class="float-tag">Enterprise</span>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- Back to Top -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
+<!-- ═══════════════════ EXPERTISE STRIP ═══════════════════ -->
+<div class="expertise-strip">
+  <div class="strip-track" id="stripTrack">
+    <span class="strip-item"><i class="bi bi-heart-pulse strip-icon"></i>Healthcare UX</span>
+    <span class="strip-item"><i class="bi bi-graph-up strip-icon"></i>Fintech Onboarding</span>
+    <span class="strip-item"><i class="bi bi-briefcase strip-icon"></i>Legal-Tech Workflows</span>
+    <span class="strip-item"><i class="bi bi-grid strip-icon"></i>Enterprise Dashboards</span>
+    <span class="strip-item"><i class="bi bi-layers strip-icon"></i>Design Systems</span>
+    <span class="strip-item"><i class="bi bi-code-slash strip-icon"></i>React Components</span>
+    <span class="strip-item"><i class="bi bi-people strip-icon"></i>Usability Testing</span>
+    <span class="strip-item"><i class="bi bi-arrow-repeat strip-icon"></i>Workflow Design</span>
+    <span class="strip-item"><i class="bi bi-file-earmark-code strip-icon"></i>Frontend Development</span>
+    <span class="strip-item"><i class="bi bi-send strip-icon"></i>Figma → Dev Handoff</span>
+    <span class="strip-item"><i class="bi bi-phone strip-icon"></i>Mobile UX</span>
+    <span class="strip-item"><i class="bi bi-layout-text-sidebar strip-icon"></i>Information Architecture</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="strip-item"><i class="bi bi-heart-pulse strip-icon"></i>Healthcare UX</span>
+    <span class="strip-item"><i class="bi bi-graph-up strip-icon"></i>Fintech Onboarding</span>
+    <span class="strip-item"><i class="bi bi-briefcase strip-icon"></i>Legal-Tech Workflows</span>
+    <span class="strip-item"><i class="bi bi-grid strip-icon"></i>Enterprise Dashboards</span>
+    <span class="strip-item"><i class="bi bi-layers strip-icon"></i>Design Systems</span>
+    <span class="strip-item"><i class="bi bi-code-slash strip-icon"></i>React Components</span>
+    <span class="strip-item"><i class="bi bi-people strip-icon"></i>Usability Testing</span>
+    <span class="strip-item"><i class="bi bi-arrow-repeat strip-icon"></i>Workflow Design</span>
+    <span class="strip-item"><i class="bi bi-file-earmark-code strip-icon"></i>Frontend Development</span>
+    <span class="strip-item"><i class="bi bi-send strip-icon"></i>Figma → Dev Handoff</span>
+    <span class="strip-item"><i class="bi bi-phone strip-icon"></i>Mobile UX</span>
+    <span class="strip-item"><i class="bi bi-layout-text-sidebar strip-icon"></i>Information Architecture</span>
+  </div>
+</div>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+<!-- ═══════════════════ CASE STUDIES ═══════════════════ -->
+<section class="section" id="work">
+  <div class="max-w-container">
+    <div class="row mb-5">
+      <div class="col-lg-7 fade-up">
+        <div class="section-label">Featured Case Studies</div>
+        <h2 class="section-title">Solving real <em>product</em> problems</h2>
+        <p class="section-desc">Enterprise-level UX work across healthcare, fintech, and legal systems — focused on workflow clarity and operational efficiency.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Case Study 1 -->
+      <div class="col-lg-4 col-md-6 fade-up fade-up-d1">
+        <div class="case-study-card h-100">
+          <div class="case-study-visual case-visual-healthcare">
+            <div class="mock-ui-wrap">
+              <img src="/assets/images/Dshboard_eaccuster.png" alt="EACCUSTER" class="product-thumb-img">
+            </div>
+          </div>
+          <div class="case-study-body">
+            <span class="cs-badge healthcare"><i class="bi bi-heart-pulse"></i> Healthcare</span>
+            <h3 class="cs-title">EACCUSTER</h3>
+            <p class="cs-desc">Redesigned disconnected diagnostic interfaces into a unified workflow-focused platform for lab technicians and operational teams. Reduced interaction friction across mobile and web.</p>
+            <div class="cs-meta">
+              <div class="cs-meta-item">
+                <div class="cs-meta-key">Role</div>
+                <div class="cs-meta-val">Product Designer</div>
+              </div>
+              <div class="cs-meta-item">
+                <div class="cs-meta-key">Company</div>
+                <div class="cs-meta-val">Accuster Technologies</div>
+              </div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag">Healthcare UX</span>
+              <span class="cs-tag">Workflow Design</span>
+              <span class="cs-tag">Mobile UX</span>
+              <span class="cs-tag">Dashboard</span>
+            </div>
+            <a href="case-study-healthcare.html" class="cs-cta">View Case Study <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 2 -->
+      <div class="col-lg-4 col-md-6 fade-up fade-up-d2">
+        <div class="case-study-card h-100">
+          <div class="case-study-visual case-visual-fintech">
+            <div class="mock-ui-wrap">
+              <img src="/assets/images/aafm_home.png" alt="Financial Education & Enrollment Platform" class="product-thumb-img">
+            </div>
+          </div>
+          <div class="case-study-body">
+            <span class="cs-badge fintech"><i class="bi bi-graph-up"></i> Fintech</span>
+            <h3 class="cs-title">Financial Education & Enrollment Platform</h3>
+            <p class="cs-desc">Redesigned onboarding, enrollment, and payment experiences for a financial education platform. Created progressive disclosure flows and trust-focused payment UX patterns.</p>
+            <div class="cs-meta">
+              <div class="cs-meta-item">
+                <div class="cs-meta-key">Role</div>
+                <div class="cs-meta-val">Product Designer</div>
+              </div>
+              <div class="cs-meta-item">
+                <div class="cs-meta-key">Company</div>
+                <div class="cs-meta-val">AAFM India</div>
+              </div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag">Fintech UX</span>
+              <span class="cs-tag">Onboarding</span>
+              <span class="cs-tag">Payments</span>
+              <span class="cs-tag">Conversion</span>
+            </div>
+            <a href="case-study-fintech.html" class="cs-cta">View Case Study <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 3 Currently working on -->
+      <div class="col-lg-4 col-md-6 fade-up fade-up-d3">
+        <div class="case-study-card h-100">
+          <div class="case-study-visual case-visual-legal">
+            <div class="mock-ui-wrap">
+              <img src="/assets/images/nexgen_members.png" alt="Nexgen Members Platform" class="product-thumb-img">
+            </div>
+          </div>
+          <div class="case-study-body">
+            <span class="cs-badge legal"><i class="bi bi-briefcase"></i> Legal-Tech</span>
+            <h3 class="cs-title">Legal Workflow & Document Management Platform</h3>
+            <p class="cs-desc">Designed a legal workflow platform centralizing document handling, onboarding, and case management. Structured the interface around legal milestones, not backend systems.</p>
+            <div class="cs-meta">
+              <div class="cs-meta-item">
+                <div class="cs-meta-key">Role</div>
+                <div class="cs-meta-val">UX Designer</div>
+              </div>
+              <div class="cs-meta-item">
+                <div class="cs-meta-key">Scope</div>
+                <div class="cs-meta-val">AAFM India (Nexgen Transfers)</div>
+              </div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag">Enterprise UX</span>
+              <span class="cs-tag">Workflow Systems</span>
+              <span class="cs-tag">Info Architecture</span>
+              <span class="cs-tag">Doc Management</span>
+            </div>
+            <a href="case-study-legaltech.html" class="cs-cta">View Case Study <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SELECTED PRODUCT WORK ═══════════════════ -->
+<section class="section" id="projects">
+  <div class="max-w-container">
+    <div class="row mb-5 align-items-end">
+      <div class="col-lg-7 fade-up">
+        <div class="section-label">Selected Work</div>
+        <h2 class="section-title">Product interfaces <em>shipped</em></h2>
+        <p class="section-desc">A selection of UI work spanning healthcare, enterprise, donation, and IoT platforms.</p>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-lg-4 col-md-6 fade-up fade-up-d1">
+        <div class="product-card">
+          <div class="product-thumb pt-1">
+            <img src="/assets/images/swasthgram_web.png" alt="Swasthgram Donation Website" class="product-thumb-img">
+          </div>
+          <div class="product-card-body">
+            <div class="pc-title">Swasthgram Donation Website</div>
+            <div class="pc-desc">Website designed to collect donations seamlessly through a secure, intuitive interface with clear navigation and engaging interactions that build trust.</div>
+            <div class="pc-tags"><span class="pc-tag">Donation UX</span><span class="pc-tag">Payments</span><span class="pc-tag">Responsive</span></div>
+            <a href="https://www.figma.com/proto/59i5F4tpp5Dzu4nVSmlfRJ/Swasthgram-2.0?node-id=1253-2&t=TR46NxoZ4MBApLqy-1" class="btn-text-link">
+              View Prototype 
+              <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up fade-up-d2">
+        <div class="product-card">
+          <div class="product-thumb pt-2">
+            <img src="/assets/images/microscope_app.png" alt="Microscope App" class="product-thumb-img">
+          </div>
+          <div class="product-card-body">
+            <div class="pc-title">Microscope App</div>
+            <div class="pc-desc">Mobile app that connects to an automated microscope via Bluetooth, enabling lab technicians to perform tests and streamline diagnostics.</div>
+            <div class="pc-tags"><span class="pc-tag">Mobile UX</span><span class="pc-tag">IoT</span><span class="pc-tag">Operational Systems</span></div>
+            <a href="https://www.figma.com/proto/HP6gggGnij5gBSvcjXJ2nw/Microscope-2.0?node-id=1-1218&p=f&viewport=204%2C400%2C0.29&t=C98fsV5rWpe01OvJ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A1218&page-id=0%3A1" class="btn-text-link">
+              View Prototype 
+              <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up fade-up-d3">
+        <div class="product-card">
+          <div class="product-thumb pt-3">
+            <img src="/assets/images/LT.png" alt="Partner Onboarding & KYC System" class="product-thumb-img">
+          </div>
+          <div class="product-card-body">
+            <div class="pc-title">LT (Lab Technician) App</div>
+            <div class="pc-desc">User-friendly mobile app for lab technicians to record blood test results and generate reports through a simple, intuitive interface.</div>
+            <div class="pc-tags"><span class="pc-tag">KYC Flow</span><span class="pc-tag">Multi-step Forms</span><span class="pc-tag">Enterprise</span></div>
+            <a href="https://www.figma.com/proto/xcl7G4oXEV6w8iTdWGqqIl/Accuster-LT-app?node-id=0-2622&p=f&viewport=547%2C128%2C0.08&t=X4oO635aIoo7MjZD-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=0%3A2622&page-id=0%3A1" class="btn-text-link">
+              View Prototype 
+              <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up fade-up-d1">
+        <div class="product-card">
+          <div class="product-thumb pt-4">
+            <img src="/assets/images/Dshboard_accuster.png" alt="Operational CRM Dashboard" class="product-thumb-img">
+          </div>
+          <div class="product-card-body">
+            <div class="pc-title">Operational CRM Dashboard</div>
+            <div class="pc-desc">Internal dashboards for partner management, workflow tracking, and data monitoring using scalable table and filtering systems.</div>
+            <div class="pc-tags"><span class="pc-tag">Dashboard UX</span><span class="pc-tag">Data Tables</span><span class="pc-tag">Admin Systems</span></div>
+            <a href="https://www.figma.com/proto/lBYKPWthTl3EmqyKWZag3I/LIMS-portal-for-accuster?node-id=5171-16480&viewport=495%2C217%2C0.07&t=7XcSm2iO1IJGogLt-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=5171%3A16480&page-id=0%3A1" class="btn-text-link">
+              View Prototype 
+              <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up fade-up-d2">
+        <div class="product-card">
+          <div class="product-thumb pt-5">
+            <img src="/assets/images/swasthgram_app.png" alt="Donation App" class="product-thumb-img">
+          </div>
+          <div class="product-card-body">
+            <div class="pc-title">Donation App</div>
+            <div class="pc-desc">Interactive donation app design with modern UI components, intuitive donation flows, and clear trust signals.</div>
+            <div class="pc-tags"><span class="pc-tag">Healthcare UX</span><span class="pc-tag">Frontend</span><span class="pc-tag">Responsive</span></div>
+            <a href="https://www.figma.com/proto/59i5F4tpp5Dzu4nVSmlfRJ/Swasthgram-2.0?node-id=1050-3779&p=f&viewport=256%2C103%2C0.07&t=peeS2lYMc65NYrov-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1050%3A3854&page-id=0%3A1" class="btn-text-link">
+              View Prototype 
+              <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up fade-up-d3">
+        <div class="product-card">
+          <div class="product-thumb pt-6">
+            <img src="/assets/images/hotel.png" alt="mySehat.ai Platform" class="product-thumb-img">
+          </div>
+          <div class="product-card-body">
+            <div class="pc-title">mySehat.ai Platform</div>
+            <div class="pc-desc">Responsive healthcare interfaces, dashboard structures, and frontend implementation improvements for digital healthcare services.</div>
+            <div class="pc-tags"><span class="pc-tag">Design Systems</span><span class="pc-tag">React Components</span><span class="pc-tag">Dev Collaboration</span></div>
+            <a href="https://www.figma.com/proto/59i5F4tpp5Dzu4nVSmlfRJ/Swasthgram-2.0?node-id=1050-3779&amp;p=f&amp;viewport=256%2C103%2C0.07&amp;t=peeS2lYMc65NYrov-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;starting-point-node-id=1050%3A3854&amp;page-id=0%3A1" class="btn-text-link">
+              View Prototype 
+              <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<section class="section" id="about">
+  <div class="max-w-container">
+    <div class="row g-5 align-items-start">
+
+      <div class="col-lg-5 fade-up">
+        <div class="section-label">About</div>
+        <h2 class="section-title">Systems thinker.<br><em>Frontend-aware</em> designer.</h2>
+
+        <p class="about-text">I'm <strong>Aditya Raghav</strong>, a Product Designer and Frontend Developer based in <strong>Noida, India</strong>. My work exists at the intersection of UX strategy and frontend implementation.</p>
+
+        <p class="about-text">I design scalable product systems and understand enough about development to make design decisions that are <strong>practical, buildable, and aligned with real-world constraints</strong>.</p>
+
+        <p class="about-text">My experience spans healthcare diagnostic systems, fintech onboarding flows, legal-tech platforms, enterprise dashboards, and operational tools. I work closely with engineering teams throughout implementation — ensuring usability, accessibility, and interaction quality remain intact from design to production.</p>
+
+        <div class="d-flex gap-2 mt-4 flex-wrap">
+          <a href="#contact" class="btn-primary-custom">Get in touch <i class="bi bi-arrow-right"></i></a>
+          <a href="#" class="btn-secondary-custom">Download Resume</a>
+        </div>
+      </div>
+
+      <div class="col-lg-7 fade-up fade-up-d2">
+        <div class="skills-grid">
+          <div>
+            <div class="skill-group-title">Product Design</div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i class="bi bi-vector-pen" style="font-size:0.75rem;"></i> UI/UX Design</span>
+              <span class="skill-pill"><i class="bi bi-lightbulb" style="font-size:0.75rem;"></i> Product Strategy</span>
+              <span class="skill-pill"><i class="bi bi-layout-text-sidebar" style="font-size:0.75rem;"></i> Wireframing</span>
+              <span class="skill-pill"><i class="bi bi-play-circle" style="font-size:0.75rem;"></i> Prototyping</span>
+              <span class="skill-pill"><i class="bi bi-diagram-3" style="font-size:0.75rem;"></i> Info Architecture</span>
+              <span class="skill-pill"><i class="bi bi-people" style="font-size:0.75rem;"></i> User Research</span>
+              <span class="skill-pill"><i class="bi bi-check2-circle" style="font-size:0.75rem;"></i> Usability Testing</span>
+              <span class="skill-pill"><i class="bi bi-layers" style="font-size:0.75rem;"></i> Design Systems</span>
+            </div>
+          </div>
+          <div>
+            <div class="skill-group-title">Frontend Development</div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i class="bi bi-code-slash" style="font-size:0.75rem;"></i> HTML5</span>
+              <span class="skill-pill"><i class="bi bi-palette" style="font-size:0.75rem;"></i> CSS3</span>
+              <span class="skill-pill"><i class="bi bi-braces" style="font-size:0.75rem;"></i> JavaScript</span>
+              <span class="skill-pill"><i class="bi bi-arrow-repeat" style="font-size:0.75rem;"></i> React</span>
+              <span class="skill-pill"><i class="bi bi-phone" style="font-size:0.75rem;"></i> Responsive Design</span>
+              <span class="skill-pill"><i class="bi bi-building" style="font-size:0.75rem;"></i> Frontend Architecture</span>
+            </div>
+          </div>
+          <div>
+            <div class="skill-group-title">Tools & Platforms</div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i class="bi bi-vector-pen" style="font-size:0.75rem;"></i> Figma</span>
+              <span class="skill-pill"><i class="bi bi-image" style="font-size:0.75rem;"></i> Photoshop</span>
+              <span class="skill-pill"><i class="bi bi-grid" style="font-size:0.75rem;"></i> Canva</span>
+              <span class="skill-pill"><i class="bi bi-robot" style="font-size:0.75rem;"></i> ChatGPT</span>
+              <span class="skill-pill"><i class="bi bi-cpu" style="font-size:0.75rem;"></i> Claude AI</span>
+              <span class="skill-pill"><i class="bi bi-github" style="font-size:0.75rem;"></i> GitHub</span>
+              <span class="skill-pill"><i class="bi bi-diagram-2" style="font-size:0.75rem;"></i> Stitch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+<section class="section" id="experience">
+  <div class="max-w-container">
+    <div class="row mb-5">
+      <div class="col-lg-6 fade-up">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">Where I've <em>worked</em></h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="exp-timeline">
+
+          <!-- AAFM India -->
+          <div class="exp-item fade-up">
+            <div class="exp-dot"></div>
+            <div class="exp-card">
+              <div class="exp-company">
+                <div class="exp-company-name">AAFM India</div>
+                <span class="exp-duration">Oct 2025 – Present</span>
+              </div>
+              <div class="exp-role">UI/UX Designer & Frontend Developer</div>
+              <div class="exp-location"><i class="bi bi-geo-alt" style="font-size:0.75rem;"></i> New Delhi, India</div>
+              <ul class="exp-desc ps-3">
+                <li>Designing learner-facing platforms across onboarding, enrollment, payment workflows, and certification dashboards.</li>
+                <li>Leading reusable design systems and frontend-aware UI components across agile product cycles.</li>
+              </ul>
+              <div class="exp-skills">
+                <span class="exp-skill">Figma</span>
+                <span class="exp-skill">React</span>
+                <span class="exp-skill">Fintech UX</span>
+                <span class="exp-skill">Design Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accuster -->
+          <div class="exp-item fade-up fade-up-d1">
+            <div class="exp-dot"></div>
+            <div class="exp-card">
+              <div class="exp-company">
+                <div class="exp-company-name">Accuster Technologies Pvt. Ltd</div>
+                <span class="exp-duration">Nov 2023 – Oct 2025</span>
+              </div>
+              <div class="exp-role">Software Engineer — UI/UX & Frontend</div>
+              <div class="exp-location"><i class="bi bi-geo-alt" style="font-size:0.75rem;"></i> New Delhi, India</div>
+              <ul class="exp-desc ps-3">
+                <li>Designed and shipped 20+ interfaces across healthcare products for web and mobile platforms.</li>
+                <li>Built React applications including mysehat.ai and sehat.drlabike.in while improving frontend performance and usability.</li>
+                <li>Worked on IoT-connected healthcare interfaces including Bluetooth microscope integrations.</li>
+              </ul>
+              <div class="exp-skills">
+                <span class="exp-skill">Healthcare UX</span>
+                <span class="exp-skill">React</span>
+                <span class="exp-skill">Mobile UX</span>
+                <span class="exp-skill">IoT Interfaces</span>
+                <span class="exp-skill">Frontend Development</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<section class="section" id="contact">
+  <div class="max-w-container">
+    <div class="row mb-5">
+      <div class="col-lg-7 fade-up">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's work on something <em>useful</em>.</h2>
+        <p class="section-desc">Open to full-time product design roles, frontend opportunities, and select freelance projects in healthcare, fintech, SaaS, and enterprise products.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+
+      
+      <div class="col-lg-7 fade-up fade-up-d2">
+        <div class="row g-4 align-items-start">
+      <div class="col-lg-4">
+        <div class="footer-logo">Aditya Raghav</div>
+        <p class="footer-desc">Crafting scalable, user-focused digital experiences across healthcare, fintech, and enterprise products.</p>
+      </div>
+      <div class="col-lg-4 offset-lg-4">
+        <div style="font-size:0.65rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:0.875rem;">Navigation</div>
+        <div class="footer-links">
+          <a href="#work" class="footer-link">Work</a>
+          <a href="#design-system" class="footer-link">Design System</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#contact" class="footer-link">Contact</a>
+          <a href="#" class="footer-link">Resume</a>
+          <a href="https://linkedin.com/in/aryaraghav8" class="footer-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+      </div>
+
+      <div class="col-lg-5 fade-up">
+        <div class="contact-card">
+          <a href="mailto:aryaraghav8@gmail.com" class="contact-link">
+            <div class="contact-link-icon"><i class="bi bi-envelope"></i></div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">aryaraghav8@gmail.com</div>
+            </div>
+            <i class="bi bi-arrow-up-right contact-arrow"></i>
+          </a>
+          <a href="https://linkedin.com/in/aryaraghav8" target="_blank" class="contact-link">
+            <div class="contact-link-icon"><i class="bi bi-linkedin"></i></div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-value">linkedin.com/in/aryaraghav8</div>
+            </div>
+            <i class="bi bi-arrow-up-right contact-arrow"></i>
+          </a>
+          <div class="contact-link" style="cursor:default;">
+            <div class="contact-link-icon"><i class="bi bi-geo-alt"></i></div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Location</div>
+              <div class="contact-link-value">Noida, India · Remote Friendly</div>
+            </div>
+            <span style="font-size:0.7rem;padding:0.25rem 0.6rem;background:var(--bg-surface);border:1px solid var(--border);border-radius:100px;color:var(--text-muted);">Open</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="max-w-container">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-4">
+        <div class="footer-logo">Aditya Raghav</div>
+        <p class="footer-desc">Crafting scalable, user-focused digital experiences across healthcare, fintech, and enterprise products.</p>
+      </div>
+      <div class="col-lg-4 offset-lg-4">
+        <div style="font-size:0.65rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:0.875rem;">Navigation</div>
+        <div class="footer-links">
+          <a href="#work" class="footer-link">Work</a>
+          <a href="#design-system" class="footer-link">Design System</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#contact" class="footer-link">Contact</a>
+          <a href="#" class="footer-link">Resume</a>
+          <a href="https://linkedin.com/in/aryaraghav8" class="footer-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Aditya Raghav. All rights reserved.</div>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/aryaraghav8" class="footer-social-link" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:aryaraghav8@gmail.com" class="footer-social-link"><i class="bi bi-envelope"></i></a>
+        <a href="#" class="footer-social-link"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Navbar scroll effect
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+// Mobile menu toggle
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+}
+
+// Close mobile menu on link click
+document.querySelectorAll('#mobileMenu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobileMenu').style.display = 'none';
+  });
+});
+
+// Scroll-triggered fade-up animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Animate hero elements on load
+document.addEventListener('DOMContentLoaded', () => {
+  const heroEls = document.querySelectorAll('.hero .fade-up, .hero h1, .hero .hero-eyebrow, .hero .hero-desc, .hero .hero-actions, .hero .hero-stats');
+  heroEls.forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), 100 + i * 80);
+  });
+});
+</script>
+
 </body>
 </html>

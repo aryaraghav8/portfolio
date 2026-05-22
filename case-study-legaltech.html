@@ -1,0 +1,737 @@
+<!-- =========================================================
+CASE STUDY PAGE — LEGAL-TECH WORKFLOW PLATFORM
+Use same design system/theme from portfolio
+========================================================= -->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Legal-Tech Workflow Platform — Case Study</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="global.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --bg:#fafafa;
+  --surface:#ffffff;
+  --border:#e5e7eb;
+  --border-soft:#f3f4f6;
+  --text:#111827;
+  --text-2:#374151;
+  --text-3:#6b7280;
+  --accent:#4f46e5;
+  --accent-bg:#eef2ff;
+
+  --radius-sm:8px;
+  --radius-md:14px;
+  --radius-lg:22px;
+
+  --shadow-sm:0 1px 3px rgba(0,0,0,.06);
+  --shadow-md:0 10px 30px rgba(0,0,0,.06);
+
+  --sans:'DM Sans',sans-serif;
+  --mono:'Geist Mono',monospace;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:var(--sans);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(1120px,calc(100% - 40px));
+  margin:auto;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+  padding:90px 0 70px;
+  border-bottom:1px solid var(--border-soft);
+}
+
+.hero-label{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  font-family:var(--mono);
+  font-size:.72rem;
+
+  color:var(--accent);
+
+  background:var(--accent-bg);
+
+  border:1px solid rgba(79,70,229,.15);
+
+  padding:7px 12px;
+  border-radius:100px;
+
+  margin-bottom:28px;
+}
+
+.hero-label .dot{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--accent);
+}
+
+.hero-title{
+  font-size:clamp(2.2rem,5vw,4rem);
+  line-height:1.08;
+  letter-spacing:-.04em;
+  margin-bottom:24px;
+}
+
+.hero-title span{
+  color:var(--accent);
+}
+
+.hero-desc{
+  max-width:760px;
+  font-size:1.05rem;
+  color:var(--text-3);
+  margin-bottom:40px;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 320px;
+  gap:40px;
+  align-items:end;
+}
+
+.hero-meta{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.meta-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:20px;
+}
+
+.meta-label{
+  font-size:.72rem;
+  color:var(--text-3);
+  margin-bottom:10px;
+}
+
+.meta-value{
+  font-size:1rem;
+  font-weight:600;
+}
+
+.hero-visual{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:var(--shadow-md);
+}
+
+.hero-visual img{
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+
+/* =========================
+SECTIONS
+========================= */
+
+.section{
+  padding:90px 0;
+  border-bottom:1px solid var(--border-soft);
+}
+
+.section-grid{
+  display:grid;
+  grid-template-columns:260px 1fr;
+  gap:60px;
+}
+
+.section-label{
+  font-family:var(--mono);
+  font-size:.72rem;
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+
+.section-content h2{
+  font-size:2rem;
+  line-height:1.15;
+  margin-bottom:24px;
+  letter-spacing:-.03em;
+}
+
+.section-content p{
+  color:var(--text-3);
+  margin-bottom:18px;
+}
+
+.section-content strong{
+  color:var(--text-2);
+}
+
+.list{
+  display:grid;
+  gap:14px;
+  margin-top:26px;
+}
+
+.list-item{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:18px 20px;
+}
+
+.list-item h4{
+  margin-bottom:8px;
+  font-size:1rem;
+}
+
+.list-item p{
+  margin:0;
+  font-size:.95rem;
+}
+
+/* =========================
+IMAGE BLOCK
+========================= */
+
+.case-image{
+  margin-top:36px;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  border:1px solid var(--border);
+  background:var(--surface);
+}
+
+.case-image img{
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+
+.case-caption{
+  padding:16px 18px;
+  border-top:1px solid var(--border-soft);
+  font-size:.82rem;
+  color:var(--text-3);
+}
+
+/* =========================
+METRICS
+========================= */
+
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:34px;
+}
+
+.metric{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:24px;
+}
+
+.metric-value{
+  font-size:2rem;
+  line-height:1;
+  font-weight:700;
+  margin-bottom:10px;
+  letter-spacing:-.04em;
+}
+
+.metric-value span{
+  color:var(--accent);
+}
+
+.metric-label{
+  font-size:.85rem;
+  color:var(--text-3);
+}
+
+/* =========================
+QUOTE BLOCK
+========================= */
+
+.quote{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-left:4px solid var(--accent);
+  border-radius:var(--radius-md);
+  padding:26px;
+  margin-top:28px;
+}
+
+.quote p{
+  margin:0;
+  font-size:1rem;
+  color:var(--text-2);
+}
+
+/* =========================
+NEXT CASE
+========================= */
+
+.next-case{
+  padding:70px 0;
+  text-align:center;
+}
+
+.next-link{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  background:var(--accent);
+  color:#fff;
+
+  padding:14px 24px;
+
+  border-radius:14px;
+
+  font-size:.92rem;
+  font-weight:500;
+
+  transition:.2s;
+}
+
+.next-link:hover{
+  transform:translateY(-2px);
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .section-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .metrics{
+    grid-template-columns:1fr;
+  }
+
+  .hero-meta{
+    grid-template-columns:1fr;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav class="navbar" id="mainNav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">Aditya Raghav</a>
+
+    
+    <ul class="nav-links mb-0">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="/assets/Aditya_Raghav_UIUX_Product_Designer.pdf" class="nav-cta ms-2">Resume ↗</a></li>
+    </ul>
+
+   
+
+    <button class="navbar-toggler d-md-none" type="button" onclick="toggleMobileMenu()">
+      <i class="bi bi-list" style="font-size:1.2rem;"></i>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" style="display:none; padding:0.75rem 1rem 1rem; border-top:1px solid var(--border);">
+    <a href="#work" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">Work</a>
+    <a href="#design-system" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">Design System</a>
+    <a href="#about" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">About</a>
+    <a href="#contact" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-secondary);">Contact</a>
+    <a href="/assets/Aditya_Raghav_UIUX_Product_Designer.pdf" class="d-block py-2 px-2 text-decoration-none" style="font-size:0.9rem;color:var(--text-primary);font-weight:500;">Resume ↗</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="hero-label">
+      <span class="dot"></span>
+      Legal-Tech UX Case Study
+    </div>
+
+    <h1 class="hero-title">
+      Simplifying legal workflows through a <span>structured document management platform.</span>
+    </h1>
+
+    <p class="hero-desc">
+      Designing a unified legal workflow system that reduced operational complexity, improved onboarding, and aligned digital experiences with real legal processes.
+    </p>
+
+    <div class="hero-grid">
+
+      <div class="hero-meta">
+
+        <div class="meta-card">
+          <div class="meta-label">Role</div>
+          <div class="meta-value">UX Designer</div>
+        </div>
+
+        <div class="meta-card">
+          <div class="meta-label">Timeline</div>
+          <div class="meta-value">3–4 Months</div>
+        </div>
+
+        <div class="meta-card">
+          <div class="meta-label">Platform</div>
+          <div class="meta-value">Enterprise Web App</div>
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+        <img src="images/legal-dashboard.jpg" alt="">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- OVERVIEW -->
+
+<section class="section">
+
+  <div class="container section-grid">
+
+    <div class="section-label">
+      Overview
+    </div>
+
+    <div class="section-content">
+
+      <h2>
+        The challenge
+      </h2>
+
+      <p>
+        Legal professionals were managing client communication, document submissions, and workflow tracking across disconnected tools including spreadsheets, email threads, and physical files.
+      </p>
+
+      <p>
+        The challenge was creating a centralized platform without overwhelming users unfamiliar with modern enterprise software systems.
+      </p>
+
+      <div class="quote">
+        <p>
+          “Legal users think in milestones and case stages — not software structures.”
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- RESEARCH -->
+
+<section class="section">
+
+  <div class="container section-grid">
+
+    <div class="section-label">
+      Research
+    </div>
+
+    <div class="section-content">
+
+      <h2>
+        Understanding legal mental models
+      </h2>
+
+      <p>
+        Conducted workflow discussions and task mapping sessions to understand how legal professionals organize information, track cases, and manage documentation.
+      </p>
+
+      <div class="list">
+
+        <div class="list-item">
+          <h4>Fragmented workflows</h4>
+          <p>Case progress was spread across multiple disconnected systems and communication channels.</p>
+        </div>
+
+        <div class="list-item">
+          <h4>High onboarding friction</h4>
+          <p>Users found enterprise software intimidating and difficult to learn.</p>
+        </div>
+
+        <div class="list-item">
+          <h4>Complex document handling</h4>
+          <p>Uploading, categorizing, and tracking legal files required excessive manual effort.</p>
+        </div>
+
+      </div>
+
+      <div class="case-image">
+        <img src="images/legal-userflow.jpg" alt="">
+        <div class="case-caption">
+          Early workflow architecture and legal process mapping.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROCESS -->
+
+<section class="section">
+
+  <div class="container section-grid">
+
+    <div class="section-label">
+      Process
+    </div>
+
+    <div class="section-content">
+
+      <h2>
+        Structuring workflows around legal milestones
+      </h2>
+
+      <p>
+        Instead of designing around backend structures, the platform was organized around how legal teams naturally think about case progression.
+      </p>
+
+      <div class="list">
+
+        <div class="list-item">
+          <h4>Step 01 — Workflow restructuring</h4>
+          <p>Mapped the interface around legal stages: intake → review → submission → resolution.</p>
+        </div>
+
+        <div class="list-item">
+          <h4>Step 02 — Guided onboarding</h4>
+          <p>Introduced contextual onboarding and progressive disclosure patterns.</p>
+        </div>
+
+        <div class="list-item">
+          <h4>Step 03 — Smarter document handling</h4>
+          <p>Designed batch upload flows with automatic categorization suggestions.</p>
+        </div>
+
+      </div>
+
+      <div class="case-image">
+        <img src="images/legal-wireframes.jpg" alt="">
+        <div class="case-caption">
+          Wireframes and legal workflow restructuring explorations.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DESIGN SYSTEM -->
+
+<section class="section">
+
+  <div class="container section-grid">
+
+    <div class="section-label">
+      Design System
+    </div>
+
+    <div class="section-content">
+
+      <h2>
+        Building scalable enterprise patterns
+      </h2>
+
+      <p>
+        Created reusable patterns for dashboards, document states, workflow tracking, and onboarding interactions to improve consistency across the platform.
+      </p>
+
+      <div class="list">
+
+        <div class="list-item">
+          <h4>Reusable workflow components</h4>
+          <p>Timeline systems, document cards, progress states, filters, and action panels.</p>
+        </div>
+
+        <div class="list-item">
+          <h4>Frontend-aware design decisions</h4>
+          <p>Component structures aligned with responsive implementation and scalable layouts.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- OUTCOMES -->
+
+<section class="section">
+
+  <div class="container section-grid">
+
+    <div class="section-label">
+      Outcomes
+    </div>
+
+    <div class="section-content">
+
+      <h2>
+        Reducing complexity across legal operations
+      </h2>
+
+      <p>
+        The redesigned workflow system improved visibility across case progress, simplified onboarding, and reduced operational friction for legal teams.
+      </p>
+
+      <div class="metrics">
+
+        <div class="metric">
+          <div class="metric-value">
+            <span>5</span> → 1
+          </div>
+          <div class="metric-label">
+            Disconnected workflows unified into a single platform
+          </div>
+        </div>
+
+        <div class="metric">
+          <div class="metric-value">
+            <span>↓</span>
+          </div>
+          <div class="metric-label">
+            Reduced onboarding friction and learning effort
+          </div>
+        </div>
+
+        <div class="metric">
+          <div class="metric-value">
+            <span>↑</span>
+          </div>
+          <div class="metric-label">
+            Improved workflow visibility and task completion
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- REFLECTION -->
+
+<section class="section">
+
+  <div class="container section-grid">
+
+    <div class="section-label">
+      Reflection
+    </div>
+
+    <div class="section-content">
+
+      <h2>
+        Key learnings
+      </h2>
+
+      <p>
+        This project reinforced how important information architecture and mental model alignment are in enterprise workflow systems.
+      </p>
+
+      <p>
+        Simplifying legal complexity wasn’t about removing functionality — it was about structuring information in a way users already understood intuitively.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- NEXT CASE -->
+
+<section class="next-case">
+
+  <div class="container">
+
+    <a href="index.html" class="next-link">
+      Back to Portfolio →
+    </a>
+
+  </div>
+
+</section>
+
+</body>
+</html>
